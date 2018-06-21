@@ -1,0 +1,15 @@
+:root {
+	/* Colors */
+	--primary: #e45844;
+	--light: #F2F2F0;
+	--dark: #456172;
+	--darkest: #1C3C57;
+	/* Fonts */
+	--heading-font: 'Abril Fatface', cursive;
+	--main-font: 'Roboto', "Helvetica Neue", Arial, sans-serif;
+	/* Breakpoints */
+	--small: 576px;
+	--medium: 769px;
+	--large: 992px;
+	--extra-large: 1200px
+}
