@@ -57,13 +57,6 @@
         displap: block
     img 
         padding: 3rem 0
-    .first-letter
-        font-size: 3.2rem
-        initial-letter: 2
-        float: left
-        margin-top: -.3rem
-        font-family: $heading-font
-        padding: 1rem .6rem 0 0
 
 .sidebar
     width: 30%
@@ -73,6 +66,5 @@
     .title 
         font-size: 2rem
         font-family: $heading-font
-        line-height: 4rem
 </style>
 

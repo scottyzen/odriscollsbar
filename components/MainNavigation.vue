@@ -1,6 +1,6 @@
 <template>
     <div class="nav nav-style absolute">
-        <div class="container flex">
+        <div class="flex container">
 
             <!-- Logo -->
             <div class="logo">
@@ -11,12 +11,12 @@
 
             <!-- Burger -->
             <div id="burger">
-                <a @click="toggleNav()" href="#">
+                <a @click="toggleNav()">
                     <img src="https://png.icons8.com/ios-glyphs/80/666A75/menu.png" width="36px">
                 </a>
             </div>
 
-            <!--  Navigation List -->
+            <!--  Mobile Navigation List -->
             <transition name="slide">
                 <ul class="mobile-nav" v-if="showNav">
                     <li @click="toggleNav()">
@@ -46,8 +46,8 @@
             </transition>
 
 
-            <!-- Desktop Navigation -->
-            <ul class="desktop-nav" v-if="screenWidth > 769">
+            <!-- Desktop Navigation List -->
+            <ul class="desktop-nav" v-if="screenWidth > 1025">
                 <li><nuxt-link to="/" exact>Home</nuxt-link></li>
                 <span></span>
                 <li><nuxt-link to="/about" exact>About</nuxt-link></li>
@@ -82,7 +82,7 @@ export default {
         this.screenWidth = window.innerWidth;
         window.addEventListener('resize',  () => {
             this.screenWidth = window.innerWidth;
-            if (this.screenWidth > 769) {
+            if (this.screenWidth > 1025) {
                 this.showNav = false;
             }
         });
@@ -120,6 +120,7 @@ export default {
   &.mobile-nav
     padding-top: 2rem
     flex-flow: column
+    left: 0
     li 
         z-index: 10
         padding: 1.2rem
@@ -129,6 +130,7 @@ export default {
   text-align: right
   padding: 1.8rem 3rem
   z-index: 10
+  cursor: pointer
 
 .nav ul span
   margin-top: 2.4rem
@@ -138,7 +140,7 @@ export default {
   background-size: cover
   display: none
 
-@media (min-width: 769px)
+@media (min-width: 1025px)
   #burger
     display: none
   .nav ul.desktop-nav
