@@ -1,0 +1,40 @@
+// Colors
+$primary: #e45844
+$light: #e5e6ea
+$dark: #456172
+$darkest: #1C3C57
+
+// Fonts
+$heading-font: 'Abril Fatface', cursive
+$main-font: 'Roboto', "Helvetica Neue", Arial, sans-serif
+// $heading-font: 'Vollkorn', serif
+
+// Variables
+$max-width: 1080px
+
+// Breakpoints    
+$mobile-width: 481px
+$tablet-width: 768px
+$laptop-width: 1025px
+$desktop-width: 1281px
+$ultra-wide-width: 1800px 
+
+@mixin mobile
+  @media (min-width: #{$mobile-width}) 
+      @content
+
+@mixin tablet
+  @media (min-width: #{$tablet-width}) 
+      @content
+
+@mixin laptop
+  @media (min-width: #{$laptop-width}) 
+      @content
+
+@mixin desktop
+  @media (min-width: #{$desktop-width}) 
+      @content
+
+@mixin ultra-wide
+  @media (min-width: #{$ultra-wide-width}) 
+      @content

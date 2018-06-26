@@ -4,7 +4,7 @@ module.exports = {
 
 	// Headers of the page
 	head: {
-		title: 'odriscollsbar',
+		title: "O' Driscolls Bar",
 		meta: [{
 				charset: 'utf-8'
 			},
@@ -36,15 +36,18 @@ module.exports = {
 	// Global css
 	css: ['@/assets/css/app.css',
 		'@/assets/css/modular.css',
-		'@/assets/css/variables.css'
 	],
+
 
 	// Plugins
 	plugins: ['~/plugins/core-compontents.js'],
 
 	// Modules
 	modules: [
-		// 'bootstrap-vue/nuxt'
+		'nuxt-sass-resources-loader'
+	],
+	sassResources: [
+		'@/assets/sass/main.sass'
 	],
 
 	// Build configuration
