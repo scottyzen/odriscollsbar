@@ -50,7 +50,7 @@
     width: 100%
     box-shadow: 0 15px 30px rgba(76, 112, 132, 0.1)
     margin-bottom: 600px // To Be Deleted
-    @include laptop
+    +laptop
         width: 70%
     p 
         padding: 0 3rem

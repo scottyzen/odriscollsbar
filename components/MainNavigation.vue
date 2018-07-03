@@ -1,11 +1,11 @@
 <template>
-    <div class="nav nav-style absolute">
+    <div class="nav nav--style absolute">
         <div class="flex container">
 
             <!-- Logo -->
             <div class="logo">
                 <nuxt-link  to="/">
-                    <img src="~/assets/images/logo.png" width="180px">
+                    <img src="~/assets/images/logo.png" width="160px">
                 </nuxt-link>
             </div>
 
@@ -23,27 +23,22 @@
             <!--  Mobile Navigation List -->
             <transition name="slide">
                 <ul class="mobile-nav" v-if="showNav">
-                    <li @click="toggleNav()">
+                    <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link to="/" exact>Home</nuxt-link>
                     </li>
-                    <span></span>
-                    <li @click="toggleNav()">
+                    <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link to="/about" exact>About</nuxt-link>
                     </li>
-                    <span></span>
-                    <li @click="toggleNav()">
+                    <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
                     </li>
-                    <span></span>
-                    <li @click="toggleNav()">
+                    <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
                     </li>
-                    <span></span>
-                    <li @click="toggleNav()">
+                    <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link to="/faq" exact>FAQ</nuxt-link>
                     </li>
-                    <span></span>
-                    <li @click="toggleNav()">
+                    <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link to="/bookings" exact>Bookings</nuxt-link>
                     </li>
                 </ul>
@@ -52,17 +47,24 @@
 
             <!-- Desktop Navigation List -->
             <ul class="desktop-nav" v-if="screenWidth > 1025">
-                <li><nuxt-link to="/" exact>Home</nuxt-link></li>
-                <span></span>
-                <li><nuxt-link to="/about" exact>About</nuxt-link></li>
-                <span></span>
-                <li><nuxt-link to="/gallery" exact>Gallery</nuxt-link></li>
-                <span></span>
-                <li><nuxt-link to="/weddings" exact>Weddings</nuxt-link></li>
-                <span></span>
-                <li><nuxt-link to="/faq" exact>FAQ</nuxt-link></li>
-                <span></span>
-                <li><nuxt-link to="/bookings" exact>Bookings</nuxt-link></li>
+                <li class="desktop-nav__item desktop-nav__item--first">
+                    <nuxt-link to="/" exact>Home</nuxt-link>
+                </li>
+                <li class="desktop-nav__item">
+                    <nuxt-link to="/about" exact>About</nuxt-link>
+                </li>
+                <li class="desktop-nav__item">
+                    <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
+                </li>
+                <li class="desktop-nav__item">
+                    <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
+                </li>
+                <li class="desktop-nav__item">
+                    <nuxt-link to="/faq" exact>FAQ</nuxt-link>
+                </li>
+                <li class="desktop-nav__item">
+                    <nuxt-link to="/bookings" exact>Bookings</nuxt-link>
+                </li>
             </ul>
 
         </div>
@@ -98,81 +100,89 @@ export default {
 <style lang="sass" scoped>
 .nav
     width: 100%
-
-.nav-style
-    background: url("~/assets/images/menu-background.png") repeat-x bottom center
-    background-size: cover
+    +modifier('style')
+        background: url("~/assets/images/menu-background.png") repeat-x bottom center
+        background-size: cover
 
 .logo
     padding: 2rem 0 3rem 3rem
-
-.nav ul
-    list-style-type: none
-    width: 100%
-    display: flex
-    position: absolute
-    background: $light
-    padding-bottom: 2rem
-    li
-        text-align: center
-        text-transform: uppercase
-        a 
-            color: #666a75
-            font-weight: 700
-            &.nuxt-link-active
-                color: $primary
-    &.mobile-nav
-        padding-top: 5rem
-        margin-top: -3rem
-        flex-flow: column
-        left: 0
-        li 
-            z-index: 10
-            padding: 1.2rem
-            a 
-                padding: 1rem 4rem
-            a:hover
-                background-color: lighten($light, 5%)
-                color: $primary
 
 #burger
     flex: 1
     text-align: right
     padding: 1.8rem 3rem
     z-index: 10
+    
+    +laptop
+        display: none
+        
     .hamburger:focus
         outline: none
+        cursor: pointer
         .hamburger-inner
             &, &::before, &::after
-                background-color: #666a75
-    button
-        cursor: pointer
+                background-color: #666A74
 
-.nav ul span
-    margin-top: 2.4rem
-    width: 5px
-    height: 5px
-    background: url("~/assets/images/bullet.png")
-    background-size: cover
-    display: none
 
-@media (min-width: 1025px)
-    #burger
-        display: none
-    .nav ul.desktop-nav
-        display: flex
-        justify-content: flex-end
-        position: static
-        background: none
-        padding: 0
-        li
-            padding: 0 1.4rem
-            padding-top: 2rem
-            width: auto
-            flex-flow: row
-        span
+
+.desktop-nav
+    list-style-type: none
+    display: flex
+    flex: 1
+    justify-content: flex-end
+    font-weight: 700
+
+    // Element
+    +element('item')
+        padding: 0 1.5rem
+        padding-top: 2rem
+        width: auto
+        flex-flow: row
+        a 
+            color: #666A74
+        .nuxt-link-active
+            color: $primary
+        &::before
+            content: "•"
+            color: #ccc
             display: inline-block
+            width: 1.75em
+            margin-left: -1.75em
 
+        // Modifier
+        +modifier('first')
+            &::before
+                content: ""
+
+
+.mobile-nav
+    list-style-type: none
+    width: 100%
+    display: flex
+    flex-flow: column
+    position: absolute
+    left: 0
+    background: $light
+    padding: 5rem 0 2rem
+    margin-top: -3rem
+    font-weight: 700
+
+    // Element
+    +element('item')
+        text-align: center
+        text-transform: uppercase
+        z-index: 10
+        max-width: 300px
+        margin: auto
+        padding: 1.2rem
+        a
+            color: #666a75
+            padding: 1rem 4rem
+        a:hover
+            background-color: lighten($light, 5%)
+            color: $primary
+        .nuxt-link-active
+            color: $primary
 
 // Animation and Transitions
 .slide-enter-active
