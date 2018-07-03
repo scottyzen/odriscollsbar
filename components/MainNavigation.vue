@@ -166,12 +166,12 @@ export default {
         background: none
         padding: 0
         li
-        padding: 0 1.4rem
-        padding-top: 2rem
-        width: auto
-        flex-flow: row
+            padding: 0 1.4rem
+            padding-top: 2rem
+            width: auto
+            flex-flow: row
         span
-        display: inline-block
+            display: inline-block
 
 
 // Animation and Transitions
