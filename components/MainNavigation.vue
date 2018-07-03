@@ -12,7 +12,11 @@
             <!-- Burger -->
             <div id="burger">
                 <a @click="toggleNav()">
-                    <img src="https://png.icons8.com/ios-glyphs/80/666A75/menu.png" width="36px">
+                    <button class="hamburger hamburger--collapse" :class="{ 'is-active': showNav }" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </a>
             </div>
 
@@ -93,87 +97,99 @@ export default {
 
 <style lang="sass" scoped>
 .nav
-  width: 100%
+    width: 100%
 
 .nav-style
-  background: url("~/assets/images/menu-background.png") repeat-x bottom center
-  background-size: cover
+    background: url("~/assets/images/menu-background.png") repeat-x bottom center
+    background-size: cover
 
 .logo
-  padding: 2rem 0 3rem 3rem
+    padding: 2rem 0 3rem 3rem
 
 .nav ul
-  list-style-type: none
-  width: 100%
-  display: flex
-  position: absolute
-  background: $light
-  padding-bottom: 2rem
-  li
-    text-align: center
-    text-transform: uppercase
-    a 
-        color: #666a75
-        font-weight: 700
-        &.nuxt-link-active
-            color: $primary
-  &.mobile-nav
-    padding-top: 2rem
-    flex-flow: column
-    left: 0
-    li 
-        z-index: 10
-        padding: 1.2rem
+    list-style-type: none
+    width: 100%
+    display: flex
+    position: absolute
+    background: $light
+    padding-bottom: 2rem
+    li
+        text-align: center
+        text-transform: uppercase
+        a 
+            color: #666a75
+            font-weight: 700
+            &.nuxt-link-active
+                color: $primary
+    &.mobile-nav
+        padding-top: 5rem
+        margin-top: -3rem
+        flex-flow: column
+        left: 0
+        li 
+            z-index: 10
+            padding: 1.2rem
+            a 
+                padding: 1rem 4rem
+            a:hover
+                background-color: lighten($light, 5%)
+                color: $primary
 
 #burger
-  flex: 1
-  text-align: right
-  padding: 1.8rem 3rem
-  z-index: 10
-  cursor: pointer
+    flex: 1
+    text-align: right
+    padding: 1.8rem 3rem
+    z-index: 10
+    .hamburger:focus
+        outline: none
+        .hamburger-inner
+            &, &::before, &::after
+                background-color: #666a75
+    button
+        cursor: pointer
 
 .nav ul span
-  margin-top: 2.4rem
-  width: 5px
-  height: 5px
-  background: url("~/assets/images/bullet.png")
-  background-size: cover
-  display: none
+    margin-top: 2.4rem
+    width: 5px
+    height: 5px
+    background: url("~/assets/images/bullet.png")
+    background-size: cover
+    display: none
 
 @media (min-width: 1025px)
-  #burger
-    display: none
-  .nav ul.desktop-nav
-    display: flex
-    justify-content: flex-end
-    position: static
-    background: none
-    padding: 0
-    li
-      padding: 0 1.4rem
-      padding-top: 2rem
-      width: auto
-      flex-flow: row
-    span
-      display: inline-block
+    #burger
+        display: none
+    .nav ul.desktop-nav
+        display: flex
+        justify-content: flex-end
+        position: static
+        background: none
+        padding: 0
+        li
+        padding: 0 1.4rem
+        padding-top: 2rem
+        width: auto
+        flex-flow: row
+        span
+        display: inline-block
 
 
 // Animation and Transitions
 .slide-enter-active
-  animation: slide-out 0.5s reverse
-  transform-origin: top
+    animation: slide-out 0.5s reverse
+    transform-origin: top
 
 .slide-leave-active
-  animation: slide-out 600ms ease
-  transform-origin: top
+    animation: slide-out 600ms ease
+    transform-origin: top
 
 @keyframes slide-out
-  0%
-    transform: translateY(0)
+    0%
+        transform: translateY(0)
 
-  50%
-    transform: translateY(5%)
+    50%
+        transform: translateY(5%)
 
-  100%
-    transform: translateY(-110%)
+    100%
+        transform: translateY(-110%)
 </style>

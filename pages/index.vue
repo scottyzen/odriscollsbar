@@ -45,8 +45,8 @@
     background-position: 0 20%
 
 .intro
-    background: white
-    padding: 6rem 3rem
+    background: $white
+    padding: 6rem 4rem
     width: 100%
     box-shadow: 0 15px 30px rgba(76, 112, 132, 0.1)
     margin-bottom: 600px // To Be Deleted
@@ -54,7 +54,7 @@
         width: 70%
     p 
         padding: 0 3rem
-        displap: block
+        margin-top: 1rem
     img 
         padding: 3rem 0
 
@@ -66,5 +66,6 @@
     .title 
         font-size: 2rem
         font-family: $heading-font
+        font-weight: 700
 </style>
 

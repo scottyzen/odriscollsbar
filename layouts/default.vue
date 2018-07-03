@@ -9,20 +9,17 @@
 
 <style lang="sass">
 html
-	font-family: $main-font
 	-ms-text-size-adjust: 100%
 	-webkit-text-size-adjust: 100%
 	-moz-osx-font-smoothing: grayscale
 	-webkit-font-smoothing: antialiased
 	box-sizing: border-box
  
-*, *:before, *:after
+*, *:before, *:after, *:focus
 	box-sizing: border-box
 	margin: 0
 	text-decoration: none
-
-body
-	background-color: $light
+    outline: (none !important)
     
 
 .container

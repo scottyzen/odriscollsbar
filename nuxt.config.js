@@ -25,7 +25,7 @@ module.exports = {
 			},
 			{
 				rel: 'stylesheet',
-				href: 'https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,700'
+				href: 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:400,700'
 			}
 		]
 	},
