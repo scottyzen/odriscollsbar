@@ -24,17 +24,22 @@ html
 
 .container
     margin: auto
-    max-width: 100%
-    @include mobile 
+    width: 100%
+    
+    +mobile 
         max-width: $mobile-width
-    @include tablet 
-        max-width: calc(#{$tablet-width} - 4%)
-    @include laptop 
+    
+    +tablet 
+        max-width: calc(#{$tablet-width} - 2%)
+    
+    +laptop 
         max-width: calc(#{$laptop-width} - 6%)
-    @include desktop 
-        max-width: calc(#{$desktop-width} - 8%)
-    @include ultra-wide 
-        max-width: calc(#{$ultra-wide-width} - 20%)  
+    
+    +desktop 
+        max-width: calc(#{$desktop-width} - 10%)
+    
+    +ultra-wide 
+        max-width: calc(#{$ultra-wide-width} - 25%)  
 
 .header
     height: 75vh
@@ -43,13 +48,15 @@ html
     background-repeat: no-repeat
     background-size: 240%
     margin-bottom: -20%
-    @include mobile
-        background-size: 160%
+
+    +mobile
+        background-size: 170%
         
-    @include tablet
-        background-size: 120%
+    +tablet
+        background-size: 140%
         margin-bottom: -10%
-    @include desktop
+        
+    +desktop
         height: 87.5vh
         background-size: cover
 </style>

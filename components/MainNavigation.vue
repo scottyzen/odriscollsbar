@@ -62,7 +62,7 @@
                 <li class="desktop-nav__item">
                     <nuxt-link to="/faq" exact>FAQ</nuxt-link>
                 </li>
-                <li class="desktop-nav__item">
+                <li class="desktop-nav__item desktop-nav__item--last">
                     <nuxt-link to="/bookings" exact>Bookings</nuxt-link>
                 </li>
             </ul>
@@ -105,7 +105,7 @@ export default {
         background-size: cover
 
 .logo
-    padding: 2rem 0 3rem 3rem
+    padding: 2rem 0 3rem
 
 #burger
     flex: 1
@@ -153,6 +153,8 @@ export default {
         +modifier('first')
             &::before
                 content: ""
+        +modifier('last')
+            padding-right: 0
 
 
 .mobile-nav
