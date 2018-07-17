@@ -2,6 +2,7 @@
     <div>
         <main-navigation/>
         <nuxt/>
+        <main-footer/>
     </div>
 </template>
 
@@ -59,4 +60,5 @@ html
     +desktop
         height: 87.5vh
         background-size: cover
+        margin-bottom: -17.5%
 </style>

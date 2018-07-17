@@ -40,7 +40,7 @@ module.exports = {
 
 
 	// Plugins
-	plugins: ['~/plugins/core-compontents.js'],
+	plugins: ['~/plugins/core-compontents.js', '~/plugins/vue2-google-maps.js'],
 
 	// Modules
 	modules: [
@@ -69,6 +69,7 @@ module.exports = {
 				})
 			}
 		},
+		vendor: ['vue2-google-maps'],
 		postcss: [
 			require('tailwindcss')('./tailwind.js'),
 			require('autoprefixer'),

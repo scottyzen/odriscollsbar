@@ -105,12 +105,14 @@ export default {
         background-size: cover
 
 .logo
-    padding: 2rem 0 3rem
+    padding: 3rem 2rem 4rem
+    +laptop 
+        padding: 2rem 0 3rem
 
 #burger
     flex: 1
     text-align: right
-    padding: 1.8rem 3rem
+    padding: 2.75rem 2rem
     z-index: 10
     
     +laptop
@@ -119,10 +121,9 @@ export default {
     .hamburger:focus
         outline: none
         cursor: pointer
-        .hamburger-inner
+        .hamburger-inner[data-v-42076448]
             &, &::before, &::after
                 background-color: #666A74
-
 
 
 .desktop-nav
