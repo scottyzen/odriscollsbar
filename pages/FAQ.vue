@@ -55,7 +55,7 @@
         border: 6px solid $light
 
         width: 100%
-        box-shadow: 0 15px 30px rgba(76, 112, 132, 0.1)
+        box-shadow: $shadow
         +tablet
             padding: 4rem 3rem
         +laptop
