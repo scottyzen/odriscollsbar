@@ -69,7 +69,7 @@
         +tablet
             padding: 4rem 3rem
         +laptop
-            padding: 5rem
+            padding: 6rem
             .row
                 width: 65%
         +desktop
@@ -87,7 +87,7 @@
     +element('left')
         box-shadow: $shadow
         border: 6px solid $white
-        transform: translateX(-6rem) scale(1.1)
+        transform: translateX(-7rem) scale(1.1)
         margin-bottom: -8rem
 
     +element('right')
@@ -95,7 +95,7 @@
         border: 6px solid $white
         margin-top: -8rem
         margin-bottom: 6rem
-        transform: translateX(6rem) scale(1.1)
+        transform: translateX(7rem) scale(1.1)
 
 .breaker
     background: url('~/assets/images/candle.jpg') center
@@ -119,6 +119,7 @@
         li
             break-inside: avoid
     +element('author')
+        margin-top: 2rem
         font-weight: bold
         float: right
 </style>
