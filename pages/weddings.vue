@@ -6,7 +6,7 @@
         <div class="row flex flex-wrap z-10">
 
             <div class="text-container">
-                <p><span class="first-letter">W</span>elcome ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus iste temporibus optio provident amet facere consequuntur dolorem porro tempora. Pblanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe. Quibusdam, porro eligendi facere harum molestiae error. Consectetur, quaerat praesentium.</p>
+                <p><span class="first-letter">F</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus iste temporibus optio provident amet facere consequuntur dolorem porro tempora. Pblanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe. Quibusdam, porro eligendi facere harum molestiae error. Consectetur, quaerat praesentium.</p>
                 <p>Lorem ipsum dolor sit amet, cmaxime consectetur corrupti id quo fuga ut nam error adipisicing elit! Ab quia voluptatibus, deserunt, illo velit veritatis minus optio! Voluptatibus maiores accusantium veniam ex velit reprehenderit saepe quibusdam.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus, saepe doloribus fugiat non, maiores sequi quas quod velit inventore, maxime consectetur corrupti id quo fuga ut nam error adipisicing elit maxime consectetur corrupti id quo fuga ut nam error adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quia impedit, culpa modi iure voluptatibus maxime consectetur corrupti id quo fuga ut nam error adipisicing elitm axime consectetur corrupti id quo fuga ut nam?</p>
             </div>
@@ -38,7 +38,7 @@
                 <h2 class="text-underline">Testimonials</h2>
 
                 <ul>
-                    <li>
+                    <li class="testimonials__list-item">
                         <p>Hi Niamh,
                             I just wanted to write you this email to thank not only yourself and Richard but EVERY single person from Graiguenamangh who helped out or contributed in some way to make Saturday the most amazing day of our lives!<br>We had an idea in our heads of what we wanted our wedding day to be like but we also felt we had to be realistic, clearly ye didn't feel the same! No matter what we wanted the answer was 'yes' and whatever we requested was done/sourced/built within a few days! When we arrived down on Wednesday we couldn't believe the amount of lads there who seemed more than happy to help us do whatever was needed to get the venue ready and those same lads were still there working away on Friday night!</p>
                             <p>Thank you to all the BnB's, guest houses, self catering cottages etc for accommodating everyone for the weekend, all our guests were well looked after, especially my cousin Aoife who some how ended up staying with the very kind Dominic! Thank you to Mark in Daisy Chain for sourcing the beloved milk churns and Bridget for providing the milk churns! Thank you to David in Duiske Abbey who was there to help us Wednesday evening, Friday evening and Saturday morning, we even had him downloading songs and burning cd's 'til all hours Friday night! Thank you to Olivia and her team for helping Fergus out with the food, the service was incredible and the food on Sunday certainly cleared the hangovers!</p>
@@ -110,16 +110,19 @@
     text-align: center
     ul
         list-style: none
-        margin: 4rem 0
-        padding: 0 4rem
+        margin: 1rem 0
+        padding: 0 2rem
         // column-count: 2
         // column-gap: 5rem
         text-align: left
         // padding: 3rem 2rem
-        li
-            break-inside: avoid
     +element('author')
         margin-top: 2rem
         font-weight: bold
         float: right
+    +element('list-item')
+        background: url('~/assets/images/quote.png') no-repeat
+        break-inside: avoid
+        // background-position: -50px -50px
+        padding: 5rem
 </style>
