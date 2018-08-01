@@ -51,7 +51,7 @@
         <div class="bottom-footer text-grey">
             <div class="container">
 
-                <div>
+                <!-- <div>
                     <div class="quick-links">
                         <div class="title">Quick Links</div>
                         <ul class="list-reset">
@@ -62,7 +62,7 @@
                             <li>FAQ</li>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- copywright Information -->
                 <div class="copywright w-full flex justify-between">
