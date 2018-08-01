@@ -48,10 +48,11 @@ html
     background-position: center
     background-repeat: no-repeat
     background-size: 240%
-    margin-bottom: -70%
+    margin-bottom: -50%
 
     +mobile
         background-size: 170%
+        margin-bottom: -30%
         
     +tablet
         background-size: 140%
