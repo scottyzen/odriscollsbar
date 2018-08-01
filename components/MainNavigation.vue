@@ -46,7 +46,7 @@
 
 
             <!-- Desktop Navigation List -->
-            <ul class="desktop-nav" v-if="screenWidth > 1025">
+            <ul class="desktop-nav" v-if="screenWidth > 992">
                 <li class="desktop-nav__item desktop-nav__item--first">
                     <nuxt-link to="/" exact>Home</nuxt-link>
                 </li>
@@ -88,7 +88,7 @@ export default {
         this.screenWidth = window.innerWidth;
         window.addEventListener('resize',  () => {
             this.screenWidth = window.innerWidth;
-            if (this.screenWidth > 1025) {
+            if (this.screenWidth > 992) {
                 this.showNav = false;
             }
         });
