@@ -118,22 +118,8 @@ export default {
     +laptop
         display: none
         
-    .hamburger:focus
-        outline: none
-        cursor: pointer
-        .hamburger-inner[data-v-42076448]
-            &, &::before, &::after
-                background-color: #666A74
-
-#burger
-    flex: 1
-    text-align: right
-    padding: 2.75rem 2rem
-    z-index: 10
-    
-    +laptop
-        display: none
-        
+    .hamburger
+        padding: (5px 0 !important)
     .hamburger:focus
         outline: none
         cursor: pointer
