@@ -30,7 +30,14 @@
         
     </div><!-- End on Container -->
 
-    <div class="image-divider"></div><!-- End on Image Divider -->
+    <div class="image-divider">
+        <picture>
+            <source srcset="~/assets/images/candle-large.jpg" media="(min-width: 1200px)">
+            <source srcset="~/assets/images/candle-medium.jpg" media="(min-width: 576px)">
+            <img src="~/assets/images/candle.jpg" alt="Candle on bench in beer garden">
+        </picture>  
+    </div><!-- End on Image Divider -->
+
 
     <div class="container">
         <div class="row">
@@ -40,10 +47,10 @@
                 <ul class="">
                     <li class="testimonials__list-item">
                         <p>Hi Niamh,<br>I just wanted to write you this email to thank not only yourself and Richard but EVERY single person from Graiguenamangh who helped out or contributed in some way to make Saturday the most amazing day of our lives! We had an idea in our heads of what we wanted our wedding day to be like but we also felt we had to be realistic, clearly ye didn't feel the same! No matter what we wanted the answer was 'yes' and whatever we requested was done/sourced/built within a few days! When we arrived down on Wednesday we couldn't believe the amount of lads there who seemed more than happy to help us do whatever was needed to get the venue ready and those same lads were still there working away on Friday night!</p>
-                            <p>Thank you to all the BnB's, guest houses, self catering cottages etc for accommodating everyone for the weekend, all our guests were well looked after, especially my cousin Aoife who some how ended up staying with the very kind Dominic! Thank you to Mark in Daisy Chain for sourcing the beloved milk churns and Bridget for providing the milk churns! Thank you to David in Duiske Abbey who was there to help us Wednesday evening, Friday evening and Saturday morning, we even had him downloading songs and burning cd's 'til all hours Friday night! Thank you to Olivia and her team for helping Fergus out with the food, the service was incredible and the food on Sunday certainly cleared the hangovers!</p>
-                            <p>Thank you to Scott and Shauna and the rest of the bar staff (the real hero's this weekend!) who made jager bomb after jager bomb and worked til all hours without complaining! Thank you the very patient taxi drivers for getting everyone home safe Saturday night. Thank you to Johnny and Eddie for providing the entertainment on Sunday and Damo for leading 'rock the boat' and starting the sing song and lastly thank you to the chairman of the GAA club for the hurls!</p>
-                            <p>If i have forgotten anyone I do apologies, there are just so many people to thank! Everyone in Graiguenamanagh should be so proud of themselves and the village and we will be forever grateful for what they have done for us.</p>
-                        <p class="testimonials__author">Ciara, David, yer fellow Cats, the Rebels and the Dubs</p>
+                        <p>Thank you to all the BnB's, guest houses, self catering cottages etc for accommodating everyone for the weekend, all our guests were well looked after, especially my cousin Aoife who some how ended up staying with the very kind Dominic! Thank you to Mark in Daisy Chain for sourcing the beloved milk churns and Bridget for providing the milk churns! Thank you to David in Duiske Abbey who was there to help us Wednesday evening, Friday evening and Saturday morning, we even had him downloading songs and burning cd's 'til all hours Friday night! Thank you to Olivia and her team for helping Fergus out with the food, the service was incredible and the food on Sunday certainly cleared the hangovers!</p>
+                        <p>Thank you to Scott and Shauna and the rest of the bar staff (the real hero's this weekend!) who made jager bomb after jager bomb and worked til all hours without complaining! Thank you the very patient taxi drivers for getting everyone home safe Saturday night. Thank you to Johnny and Eddie for providing the entertainment on Sunday and Damo for leading 'rock the boat' and starting the sing song and lastly thank you to the chairman of the GAA club for the hurls!</p>
+                        <p>If i have forgotten anyone I do apologies, there are just so many people to thank! Everyone in Graiguenamanagh should be so proud of themselves and the village and we will be forever grateful for what they have done for us.</p>
+                        <p class="testimonials__author">Ciara & David Herity</p>
                     </li>
                 </ul>
             </div>
@@ -132,16 +139,17 @@
         +laptop
             order: 0
 .image-divider
-    background: url('~/assets/images/candle.jpg') center
-    background-size: cover
-    background-position: 0 35%
-    margin: -4rem 0
-    min-height: 550px
+    margin: -2rem 0
     position: relative
     z-index: -10
+    +tablet
+        margin: -3rem 0
+    +laptop
+        margin: -4rem 0
 
 .testimonials
     text-align: center
+    padding-bottom: 4rem
     ul
         list-style: none
         margin: 1rem 0

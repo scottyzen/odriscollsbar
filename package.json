@@ -14,7 +14,7 @@
 	},
 	"dependencies": {
 		"hamburgers": "^0.9.3",
-		"nuxt": "^1.0.0",
+		"nuxt": "^1.4.2",
 		"nuxt-sass-resources-loader": "^2.0.2",
 		"vue2-google-maps": "^0.10.0"
 	},

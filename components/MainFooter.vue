@@ -48,7 +48,7 @@
             @click="center=m.position"
         />
         </GmapMap>
-        <div class="bottom-footer text-grey">
+        <div class="bottom-footer text-grey-dark">
             <div class="container">
 
                 <!-- <div>
@@ -65,7 +65,7 @@
                 </div> -->
 
                 <!-- copywright Information -->
-                <div class="copywright w-full flex justify-between">
+                <div class="copywright w-full flex justify-between px-6">
                     <p>© O' Driscolls Bar 2018</p>
                     <p>by Scott Kennedy</p>
                 </div>
@@ -368,7 +368,7 @@ export default {
 
 .bottom-footer
     background-color: #17263B
-    padding: 1rem
+    padding: 2rem 1rem 1rem
     margin-top: -15px
     position: relative
     z-index: 2
