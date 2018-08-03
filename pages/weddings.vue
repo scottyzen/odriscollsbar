@@ -23,7 +23,7 @@
 
             <div class="text-container text-container--right w-full  lg:w-3/5 text-container--last">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, is a veritatis a illum praesentium excepturi iste? Perferendis veritatis quae non assumenda quibusdam, dolores hic, blanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe deserunt, illo velit veritatis minus optio! Voluptatibus maiores accusantium veniam ex velit reprehenderit saepe quibusdam debitis provident.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eum optio inventore incidunt perspiciatis, assumenda, nesciunt debitis .</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eum optio inventore incidunt perspiciatis, assumenda, nesciunt debitis .</p> 
             </div>
             
         </div>
@@ -38,7 +38,6 @@
         </picture>  
     </div><!-- End on Image Divider -->
 
-
     <div class="container">
         <div class="row">
             <div class="testimonials">
@@ -52,6 +51,10 @@
                         <p>If i have forgotten anyone I do apologies, there are just so many people to thank! Everyone in Graiguenamanagh should be so proud of themselves and the village and we will be forever grateful for what they have done for us.</p>
                         <p class="testimonials__author">Ciara & David Herity</p>
                     </li>
+                    <li class="testimonials__list-item">
+                        <p>Niamh and Richard were so welcoming and went out of their way to accommodate all of us .It was a pleasure holding our party there and would highly recommend their premises for your special occasion</p>
+                        <p class="testimonials__author">Sandra Proctor</p>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -62,7 +65,7 @@
 
 <style lang="sass" scoped>
 .header--style
-    background-image: linear-gradient(to top, $light 0%,rgba(125,185,232,0) 10%), url("~/assets/images/garden.jpg")
+    background-image: linear-gradient(to top, $light 0%,rgba(125,185,232,0) 10%), url("~/assets/images/garden-2.jpg")
     background-position: 0 20%
 
 .container
@@ -163,11 +166,12 @@
 
     +element('author')
         margin-top: 2rem
+        width: 100%
+        text-align: right
         font-weight: bold
-        float: right
         &::before
             content: '——— '
             margin-right: 10px
-            letter-spacing: -1.5px
+            letter-spacing: -5px
             color: $yellow
 </style>

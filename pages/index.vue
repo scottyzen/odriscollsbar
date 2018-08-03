@@ -12,29 +12,47 @@
                 <img class="intro__image" src="~/assets/images/niamh-and-richard.jpg" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, pariatur?</p>
             </div>
-        <div class="sidebar">
-            <span class="sidebar__title">Heading</span>
-            <p>Amet consectetur adipisicing elit. Quibusdam, porro eligendi facere harum molestiae error. Consectetur, quaerat praesentium.</p>
-
-            <br><hr>
-
-            <span class="sidebar__title">Opening Hours</span>
-            <p>Monday 11:30 - 11:30
-            <br>Tuesday 11:30 - 11:30
-            <br>Wednesday 11:30 - 11:30
-            <br>Thursday 11:30 - 11:30
-            <br>Friday 11:30 - 12:30
-            <br>Saturday 11:30 - 12:30
-            <br>Sunday 12:00 - 11:00</p>
-
-            <br><hr>
-
-            <span class="sidebar__title">Instagram</span>
-            <p>Tag your photo with <strong>#odriscolls</strong> to see them here</p>
-        </div>
-
         </div>
         
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="quick-info">
+                <div class="quick-info__item">
+                    <span class="quick-info__title">Opening Hours</span>
+                    <div class="flex">
+                        <span class="flex-1">Monday - Thursday</span>
+                        <span>11:30 - 11:30</span>
+                    </div>
+                    <div class="flex">
+                        <span class="flex-1">Friday - Saturday</span>
+                        <span>11:30 - 12:30</span>
+                    </div>
+                    <div class="flex">
+                        <span class="flex-1">Sunday</span>
+                        <span>12:00 - 11:00</span>
+                    </div>
+                </div>
+                <div class="quick-info__item">
+                    <span class="quick-info__title">Follow Us</span>
+                    <div class="icons flex">
+                        <div class="icon">
+                            <img src="~/assets/images/icons/Facebook.svg">
+                        </div>
+                        <div class="icon">
+                            <img src="~/assets/images/icons/Twitter.svg">
+                        </div>
+                        <div class="icon">
+                            <img src="~/assets/images/icons/Instagram.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-info__item">
+                    <span class="quick-info__title">Instagram</span>
+                    <p>Tag your photo with <strong>#odriscolls</strong> to see them here</p>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- <div class="container">
         <div class="newsletter">
@@ -70,11 +88,6 @@
         padding: 4rem
     +laptop
         padding: 5rem
-        .row
-            width: 65%
-    +desktop
-        .row
-            width: 65%
     p 
         padding: 0 2rem
         margin-top: 1rem
@@ -82,18 +95,27 @@
         margin: 3rem 0
         border: 10px solid #fff
 
-.sidebar
-    width: 30%
-    padding-left: 3rem
-    border-left: 2px solid #E4E5E9
-    p 
-        padding: 0
-    +element('title') 
-        font-size: 1.8rem
-        display: inline-block
-        padding: 1rem 0
+svg
+  width: 100%
+
+.quick-info
+    margin-top: 4rem
+    +element('item')
+        padding: 2rem
+    +element('title')
         font-family: $heading-font
-        font-weight: 700
+        font-weight: 600
+        font-size: 1.875rem
+        line-height: 2
+    +laptop
+        column-count: 3
+        +element('item')
+            break-inside: avoid
+            padding: 2rem
+    .icons
+        .icon
+            width: 60px
+            margin-right: 2rem
 
 .newsletter
     background: $white
