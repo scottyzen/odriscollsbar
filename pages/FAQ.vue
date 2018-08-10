@@ -3,7 +3,7 @@
     <div>
         
         <picture>
-            <source srcset="~/assets/images/garden-bench-large.png" media="(min-width: 1200px)">
+            <source srcset="~/assets/images/garden-bench-large.jpg" media="(min-width: 1200px)">
             <source srcset="~/assets/images/garden-bench-medium.jpg" media="(min-width: 576px)">
             <img src="~/assets/images/garden-bench.jpg" alt="Beer garden ready for a wedding">
         </picture>

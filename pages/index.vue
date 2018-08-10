@@ -2,7 +2,7 @@
   <div>
     <div class="header header--style mb-8">
         <picture>
-            <source srcset="~/assets/images/garden-large.png" media="(min-width: 1200px)">
+            <source srcset="~/assets/images/garden-large.jpg" media="(min-width: 1200px)">
             <source srcset="~/assets/images/garden-medium.jpg" media="(min-width: 576px)">
             <img src="~/assets/images/garden.jpg" alt="Beer garden ready for a wedding">
         </picture>
