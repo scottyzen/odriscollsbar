@@ -114,7 +114,7 @@ export default {
 #burger
     flex: 1
     text-align: right
-    padding: 2.75rem 2rem
+    padding: 1.5rem 2rem
     z-index: 10
     
     +laptop
