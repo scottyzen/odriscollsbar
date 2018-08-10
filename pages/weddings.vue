@@ -1,32 +1,37 @@
 <template>
   <div>
-    <div class="header header--style">
+    <div>
+        
+        <picture>
+            <source srcset="~/assets/images/garden-large.jpg" media="(min-width: 1200px)">
+            <source srcset="~/assets/images/garden-medium.jpg" media="(min-width: 576px)">
+            <img src="~/assets/images/garden.jpg" alt="Beer garden ready for a wedding">
+        </picture>
     </div>
-    <div class="container">
-        <div class="row flex flex-wrap z-10 m-4 md:m-0 xl:m-1">
+    
+    <div class="container container--first">
+            <div class="row content flex flex-wrap mt-16">
+                <div class="w-1/2 pr-10 my-16 text-area">
+                    <p class="mt-8"><span class="first-letter">F</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus iste temporibus optio provident amet facere consequuntur dolorem porro tempora. Pblanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe. Quibusdam, porro eligendi facere harum molestiae error. Consectetur, quaerat praesentium.</p>
+                    <p>Lorem ipsum dolor sit amet, cmaxime consectetur corrupti id quo fuga ut nam error adipisicing elit! Ab quia voluptatibus, deserunt, illo velit veritatis minus optio! Voluptatibus maiores accusantium veniam ex velit reprehenderit saepe quibusdam.</p>
+                    <p>Dignissimos temporibus, saepe doloribus fugiat non, maiores sequi quas quod velit inventore, maxime consectetur corrupti id quo fuga ut nam error adipisicing elit maxime consectetur corrupti id quo fuga ut nam error adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quia impedit, culpa modi iure voluptatibus maxime consectetur corrupti id quo fuga ut nam error adipisicing elitm axime consectetur corrupti id quo fuga ut nam?</p>
+                </div>
 
-            <div class="text-container text-container--left w-full lg:w-3/5">
-                <p><span class="first-letter">F</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus iste temporibus optio provident amet facere consequuntur dolorem porro tempora. Pblanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe. Quibusdam, porro eligendi facere harum molestiae error. Consectetur, quaerat praesentium.</p>
-                <p>Lorem ipsum dolor sit amet, cmaxime consectetur corrupti id quo fuga ut nam error adipisicing elit! Ab quia voluptatibus, deserunt, illo velit veritatis minus optio! Voluptatibus maiores accusantium veniam ex velit reprehenderit saepe quibusdam.</p>
-                <p>Dignissimos temporibus, saepe doloribus fugiat non, maiores sequi quas quod velit inventore, maxime consectetur corrupti id quo fuga ut nam error adipisicing elit maxime consectetur corrupti id quo fuga ut nam error adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quia impedit, culpa modi iure voluptatibus maxime consectetur corrupti id quo fuga ut nam error adipisicing elitm axime consectetur corrupti id quo fuga ut nam?</p>
-            </div>
-            
-            <!-- Right Image -->
-            <div class="showcase-image w-full lg:w-2/5">
-                <img class="showcase-image__right" src="~/assets/images/bike.jpg" alt="">
-            </div>
+                <div class="w-1/2 pl-10">
+                    <img class="" src="~/assets/images/bike.jpg" alt="">
+                </div>
 
-            <!-- Left Image -->
-            <div class="showcase-image w-full lg:w-2/5 showcase-image--last">
-                <img class="showcase-image__left" src="~/assets/images/first-wedding.jpg" alt="">
-            </div>
+                <div class="w-1/2 pr-10">
+                <img class="" src="~/assets/images/first-wedding.jpg" alt="">
+                </div>
 
-            <div class="text-container text-container--right w-full  lg:w-3/5 text-container--last">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, is a veritatis a illum praesentium excepturi iste? Perferendis veritatis quae non assumenda quibusdam, dolores hic, blanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe deserunt, illo velit veritatis minus optio! Voluptatibus maiores accusantium veniam ex velit reprehenderit saepe quibusdam debitis provident.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eum optio inventore incidunt perspiciatis, assumenda, nesciunt debitis .</p> 
+                <div class="w-1/2 pl-10 mt-8 text-area">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, is a veritatis a illum praesentium excepturi iste? Perferendis veritatis quae non assumenda quibusdam, dolores hic, blanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe deserunt, illo velit veritatis minus optio! Voluptatibus maiores accusantium veniam ex velit reprehenderit saepe quibusdam debitis provident.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eum optio inventore incidunt perspiciatis, assumenda, nesciunt debitis .</p> 
+                </div>
+                
             </div>
-            
-        </div>
+        
         
     </div><!-- End on Container -->
 
@@ -38,9 +43,9 @@
         </picture>  
     </div><!-- End on Image Divider -->
 
-    <div class="container">
+    <div class="container container--style mb-16">
         <div class="row">
-            <div class="testimonials">
+            <div class="testimonials px-16 py-16">
                 <h2 class="text-underline mt-4">Testimonials</h2>
 
                 <ul class="">
@@ -64,83 +69,15 @@
 </template>
 
 <style lang="sass" scoped>
-.header--style
-    background-image: linear-gradient(to top, $light 0%,rgba(125,185,232,0) 10%), url("~/assets/images/garden-2.jpg")
-    background-position: 0 20%
-
-.container
-    background: $white
-    border: 6px solid $light
-    width: 100%
-    box-shadow: $shadow
-    .row
-        padding: 3rem 1rem
-        +tablet
-            padding: 4rem 3rem
-        +laptop
-            padding: 5rem
-        +desktop
-            padding: 6rem
-
-.text-container
-    margin-bottom: 2rem
-    +modifier('left')
-        +laptop
-            padding-right: 4rem
-        +desktop
-            padding-right: 3rem
-        +ultra-wide
-            padding-right: 4rem
-    +modifier('right')
-        +laptop
-            padding-left: 4rem
-        +desktop
-            padding-left: 3rem
-        +ultra-wide
-            padding-left: 4rem
-    +modifier('last')
-        margin-bottom: 0
-    
-
-.showcase-image
-    text-align: center
-    margin-bottom: 4rem
-    // Elements
-    +element('left')
+.content
+    img
+        border: $border
         box-shadow: $shadow
-        border: 6px solid $white
-        margin-top: 2rem
-        +laptop
-            margin-bottom: -8rem
-            margin-top: 0
-        +desktop
-            transform: translateX(-5rem) scale(1.25)
-            margin-top: 2rem
-            margin-bottom: -6rem
-        +ultra-wide
-            transform: translateX(-5rem) scale(1.25)
-            margin-top: -8rem
-            margin-bottom: -8rem
-    +element('right')
-        box-shadow: $shadow
-        border: 6px solid $white
-        +laptop
-            // margin-bottom: 4rem
-            // transform: translateX(3rem) scale(1.25)
-        +desktop
-            margin-top: -5rem
-            margin-bottom: 6rem
-            transform: translateX(5rem) scale(1.25)
-        +ultra-wide
-            margin-top: -5rem
-            margin-bottom: 8rem
-            transform: translateX(5rem) scale(1.25)
-    // Modifiers
-    +modifier('last')
-        order: 1
-        margin-bottom: 0
-        +laptop
-            order: 0
+
+.text-area
+    p
+        padding: 0 2rem
+
 .image-divider
     margin: -2rem 0
     position: relative

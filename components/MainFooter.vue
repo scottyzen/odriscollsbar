@@ -345,7 +345,7 @@ export default {
 
 .contact-info
     background: $white
-    border: 6px solid $light
+    border: $border
     display: inline-block
     box-shadow: $shadow
     z-index: 1

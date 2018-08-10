@@ -31,7 +31,9 @@ module.exports = {
 	},
 
 	// Customize the progress bar color
-	loading: false,
+	loading: {
+		color: '#D4956B'
+	},
 
 	// Global css
 	css: ['@/assets/css/app.css',
@@ -69,10 +71,6 @@ module.exports = {
 				})
 			}
 		},
-		vendor: ['vue2-google-maps'],
-		postcss: [
-			require('tailwindcss')('./tailwind.js'),
-			require('autoprefixer'),
-		]
+		vendor: ['vue2-google-maps']
 	}
 }

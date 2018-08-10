@@ -1,9 +1,9 @@
 <template>
-    <div class="nav nav--style absolute">
+    <div class="nav nav--style relative shadow-lg">
         <div class="flex container">
 
             <!-- Logo -->
-            <div class="logo">
+            <div class="logo self-center">
                 <nuxt-link  to="/">
                     <img src="~/assets/images/logo.png" width="160px">
                 </nuxt-link>
@@ -27,10 +27,10 @@
                         <nuxt-link to="/" exact>Home</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/about" exact>About</nuxt-link>
+                        <nuxt-link to="/about" exact class="line-through">About</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
+                        <nuxt-link to="/gallery" exact class="line-through">Gallery</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
@@ -39,7 +39,7 @@
                         <nuxt-link to="/faq" exact>FAQ</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/bookings" exact>Bookings</nuxt-link>
+                        <nuxt-link to="/bookings" exact class="line-through">Bookings</nuxt-link>
                     </li>
                 </ul>
             </transition>
@@ -101,13 +101,15 @@ export default {
 .nav
     width: 100%
     +modifier('style')
-        background: url("~/assets/images/menu-background.png") repeat-x bottom center
+        background: $dark
         background-size: cover
 
 .logo
-    padding: 3rem 2rem 4rem
+    padding-left: 2rem
+    +tablet 
+        padding-left: 1rem
     +laptop 
-        padding: 2rem 0 3rem
+        padding-left: 0
 
 #burger
     flex: 1
@@ -125,7 +127,7 @@ export default {
         cursor: pointer
         .hamburger-inner[data-v-42076448]
             &, &::before, &::after
-                background-color: #666A74
+                background-color: $yellow
 
 
 .desktop-nav
@@ -137,17 +139,18 @@ export default {
 
     // Element
     +element('item')
-        padding: 0 1.5rem
-        padding-top: 2rem
+        padding: 2.5rem 1.5rem
         width: auto
         flex-flow: row
         a 
-            color: #666A74
+            color: $light
+            padding-bottom: 2.5rem
         .nuxt-link-active
-            color: $primary
+            color: $yellow
+            border-bottom: 2px solid $yellow
         &::before
             content: "•"
-            color: #ccc
+            color: lighten(#242F3D, 5%)
             display: inline-block
             width: 1.75em
             margin-left: -1.75em

@@ -20,15 +20,14 @@ html
 	box-sizing: border-box
 	margin: 0
 	text-decoration: none
-    outline: (none !important)
     
 
 .container
     margin: auto
-    width: 100%
+    width: calc(100% - 1rem)
     
     +mobile 
-        max-width: $mobile-width
+        max-width: calc(#{$mobile-width} - 2%)
     
     +tablet 
         max-width: calc(#{$tablet-width} - 2%)
@@ -40,26 +39,31 @@ html
         max-width: calc(#{$desktop-width} - 10%)
     
     +ultra-wide 
-        max-width: calc(#{$ultra-wide-width} - 25%)  
+        max-width: 1200px
+
+    +modifier('style')
+        background: $white
+        border: $border
+        box-shadow: $shadow
+    +modifier('first')
+        transform: translateY(-100px)
+        margin-bottom: -100px
+        +tablet
+            transform: translateY(-150px)
+            margin-bottom: -150px
+        +desktop
+            transform: translateY(-150px)
+            margin-bottom: calc(-150px - 4rem)
+        +ultra-wide
+            transform: translateY(-350px)
+            margin-bottom: -350px
 
 .header
-    height: 75vh
-    min-height: 600px
-    background-position: center
-    background-repeat: no-repeat
-    background-size: 240%
-    margin-bottom: -50%
-
+    margin-bottom: -100px
     +mobile
-        background-size: 170%
-        margin-bottom: -30%
-        
+        margin-bottom: -100px
     +tablet
-        background-size: 140%
-        margin-bottom: -10%
-        
+        margin-bottom: -15%
     +desktop
-        height: 87.5vh
-        background-size: cover
-        margin-bottom: -17.5%
+        margin-bottom: -10% 
 </style>

@@ -1,10 +1,15 @@
 <template>
   <div>
+    <div>
+        
+        <picture>
+            <source srcset="~/assets/images/garden-bench-large.png" media="(min-width: 1200px)">
+            <source srcset="~/assets/images/garden-bench-medium.jpg" media="(min-width: 576px)">
+            <img src="~/assets/images/garden-bench.jpg" alt="Beer garden ready for a wedding">
+        </picture>
+    </div>
 
-    <!-- Header Image -->
-    <div class="header header--style"></div>
-
-    <div class="container flex flex-wrap">
+    <div class="container flex flex-wrap container--first">
         <div class="row">
             <h1 class=" text-underline">FAQ</h1>
             <ul class="questions">
@@ -40,15 +45,20 @@
 </template>
 
 <style lang="sass" scoped>
-.header--style
-    background-image: linear-gradient(to top, $light 0%,rgba(125,185,232,0) 10%), url("~/assets/images/garden-bench.jpg")
-    background-position: 0 50%
-    +tablet
-        background-size: cover
-        background-position: 0 bottom
+
 
 .container
     text-align: center
+    +modifier('first')
+        transform: translateY(-100px)
+        +mobile
+            transform: translateY(-100px)
+        +tablet
+            transform: translateY(-150px)
+        +desktop
+            transform: translateY(-250px )
+        +ultra-wide
+            transform: translateY(-350px )
     .row
         background: $white
         padding: 3rem 1rem

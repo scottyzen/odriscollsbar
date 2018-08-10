@@ -1,22 +1,32 @@
 <template>
   <div>
-    <div class="header header--style">
+    <div class="header header--style mb-8">
+        <picture>
+            <source srcset="~/assets/images/garden-large.png" media="(min-width: 1200px)">
+            <source srcset="~/assets/images/garden-medium.jpg" media="(min-width: 576px)">
+            <img src="~/assets/images/garden.jpg" alt="Beer garden ready for a wedding">
+        </picture>
     </div>
-    <div class="container flex flex-wrap">
-        <div class="intro">
-            <div class="row">
-                <p><span class="first-letter">W</span>elcome ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus iste temporibus optio provident amet facere consequuntur dolorem porro tempora. Pblanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe. Quibusdam, porro eligendi facere harum molestiae error. Consectetur, quaerat praesentium.</p>
-                <img class="intro__image" src="~/assets/images/pub-front.jpg" alt="O' Driscolls Bar on a snowy day">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, veritatis a illum praesentium excepturi iste? Perferendis veritatis quae non assumenda quibusdam, dolores hic, blanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe deserunt, illo velit veritatis minus optio! Voluptatibus maiores accusantium veniam ex velit reprehenderit saepe quibusdam debitis provident.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eum optio inventore incidunt perspiciatis, assumenda, nesciunt debitis nostrum dolorum reprehenderit ea ipsam, aliquid beatae hic.</p>
-                <img class="intro__image" src="~/assets/images/niamh-and-richard.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, pariatur?</p>
-            </div>
+
+    <div class="container container--style container--first container--bottom-gap p-10 md:p-16">
+        <div class="row max-w-md m-auto my-8">
+            <p><span class="first-letter">W</span>elcome ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus iste temporibus optio provident amet facere consequuntur dolorem porro tempora. Pblanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe. Quibusdam, porro eligendi facere harum molestiae error. Consectetur, quaerat praesentium.</p>
+            <p class="font-bold text-xl">"Yeipsum dolor, sit amet consectetur adipisicing elit. Consectetur optio, nesciunt debitis nostrum dolorum  ea ipsam, aliquid beatae hic."</p>
+            <p>Ballyduff House, as well as hosting weddings, is also the perfect settings for private parties, events, conferences, and social gatherings of any kind. Depending on the season, the use of the House together with the extensive and beautifully kept grounds and walled garden can make for a highly successful and memorable social engagement. Marquees, catering, floral display and transport to suit your needs for any occasion can be provided by prior arrangement.</p>
+            <br>
+            <a href="#" class="bg-orange hover:bg-orange-dark text-orange-lightest font-semibold py-2 px-4 rounded shadow">Find out more</a>
         </div>
-        
     </div>
-    <div class="container">
+
+    <div class="container intro">
         <div class="row">
+            <h2>Quick History</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus ducimus quam repudiandae recusandae vero consequuntur rem voluptates laudantium architecto ad ex, veritatis similique impedit fugiat quidem deserunt? Facilis non totam voluptates, sit ratione quidem sunt quod fugit debitis ipsam accusamus dolorem beatae accusantium error nostrum doloremque perferendis numquam praesentium sed! Voluptatem cum, veritatis architecto impedit nisi laborum. Repellendus totam possimus ab reprehenderit aliquam voluptatibus expedita corrupti natus provident excepturi nesciunt ad labore recusandae animi commodi vitae obcaecati temporibus iusto, tenetur ratione rerum sed. Laudantium.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row mb-8">
             <div class="quick-info">
                 <div class="quick-info__item">
                     <span class="quick-info__title">Opening Hours</span>
@@ -33,8 +43,14 @@
                         <span>12:00 - 11:00</span>
                     </div>
                 </div>
+                
                 <div class="quick-info__item">
-                    <span class="quick-info__title">Follow Us</span>
+                    <span class="quick-info__title">Instagram</span>
+                    <p>Tag your photo with <strong class=" text-orange">#odriscollsbar</strong> to see them displayed here</p>
+                </div>
+
+                <div class="quick-info__item">
+                    <span class="quick-info__title">Find Us</span>
                     <div class="icons flex">
                         <div class="icon">
                             <img src="~/assets/images/icons/Facebook.svg">
@@ -47,56 +63,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="quick-info__item">
-                    <span class="quick-info__title">Instagram</span>
-                    <p>Tag your photo with <strong>#odriscolls</strong> to see them here</p>
-                </div>
+
             </div>
         </div>
     </div>
-    <!-- <div class="container">
-        <div class="newsletter">
-            <div class="newsletter__description">
-                <p>Never miss a thing</p>
-                <small>Recieve the latest blog posts, news and upcoming events.</small>
-            </div>
-            <form class="newsletter-form">
-                <small>SIGN UP</small>
-                <br>
-                <input class="newsletter-form__input" type="text" placeholder="Email">
-            </form>
-            <div class="button">Send</div>
-        </div>
-    </div> -->
+
+    
   </div>
 </template>
 
 <style lang="sass">
-.header--style
-    background-image: linear-gradient(to top, $light 0%,rgba(125,185,232,0) 10%), url("~/assets/images/garden.jpg")
-    background-position: 0 20%
-
-.intro
-    background: $white
-    padding: 3rem 1rem
-    width: 100%
-    display: flex
-    justify-content: space-between
-    box-shadow: $shadow
-    border: 6px solid $light
-    +tablet
-        padding: 4rem
-    +laptop
-        padding: 5rem
-    p 
-        padding: 0 2rem
-        margin-top: 1rem
-    +element('image')
-        margin: 3rem 0
-        border: 10px solid #fff
-
-svg
-  width: 100%
+.container
+    +modifier('bottom-gap')
+        margin-bottom: 150px
 
 .quick-info
     margin-top: 4rem
@@ -105,7 +84,7 @@ svg
     +element('title')
         font-family: $heading-font
         font-weight: 600
-        font-size: 1.875rem
+        font-size: 1.75rem
         line-height: 2
     +laptop
         column-count: 3
@@ -114,27 +93,9 @@ svg
             padding: 2rem
     .icons
         .icon
-            width: 60px
-            margin-right: 2rem
+            width: 50px
+            margin: 1rem 1rem 0 0
 
-.newsletter
-    background: $white
-    margin-bottom: 3rem
-    display: flex
-    border-left: solid 5px $primary
-    align-items: center
-    +element('description')
-        padding-left: 4rem
-    .button 
-        background: $primary
-        padding: 4rem 2rem
-
-.newsletter-form
-    margin-left: 5rem
-    flex: 1
-    +element('input')
-        padding: .5rem
-        margin: .5rem 1rem .5rem 0
 
 </style>
 
