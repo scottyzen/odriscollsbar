@@ -33,7 +33,7 @@ html
         max-width: calc(#{$tablet-width} - 2%)
     
     +laptop 
-        max-width: calc(#{$laptop-width} - 6%)
+        max-width: calc(#{$laptop-width} - 4rem)
     
     +desktop 
         max-width: calc(#{$desktop-width} - 10%)
@@ -52,11 +52,13 @@ html
             transform: translateY(-150px)
             margin-bottom: -150px
         +desktop
-            transform: translateY(-150px)
-            margin-bottom: calc(-150px - 4rem)
+            transform: translateY(-200px)
+            margin-bottom: calc(-200px - 4rem)
         +ultra-wide
             transform: translateY(-350px)
             margin-bottom: -350px
+    +modifier('bottom-gap')
+        margin-bottom: 100px
 
 .header
     margin-bottom: -100px

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div>
-        
+    <div class="header header--style mb-8">
         <picture>
             <source srcset="~/assets/images/garden-large.jpg" media="(min-width: 1200px)">
             <source srcset="~/assets/images/garden-medium.jpg" media="(min-width: 576px)">
@@ -9,31 +8,49 @@
         </picture>
     </div>
     
-    <div class="container container--first">
-            <div class="row content flex flex-wrap mt-16">
-                <div class="w-1/2 pr-10 my-16 text-area">
-                    <p class="mt-8"><span class="first-letter">F</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus iste temporibus optio provident amet facere consequuntur dolorem porro tempora. Pblanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe. Quibusdam, porro eligendi facere harum molestiae error. Consectetur, quaerat praesentium.</p>
-                    <p>Lorem ipsum dolor sit amet, cmaxime consectetur corrupti id quo fuga ut nam error adipisicing elit! Ab quia voluptatibus, deserunt, illo velit veritatis minus optio! Voluptatibus maiores accusantium veniam ex velit reprehenderit saepe quibusdam.</p>
-                    <p>Dignissimos temporibus, saepe doloribus fugiat non, maiores sequi quas quod velit inventore, maxime consectetur corrupti id quo fuga ut nam error adipisicing elit maxime consectetur corrupti id quo fuga ut nam error adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde quia impedit, culpa modi iure voluptatibus maxime consectetur corrupti id quo fuga ut nam error adipisicing elitm axime consectetur corrupti id quo fuga ut nam?</p>
-                </div>
-
-                <div class="w-1/2 pl-10">
-                    <img class="" src="~/assets/images/bike.jpg" alt="">
-                </div>
-
-                <div class="w-1/2 pr-10">
-                <img class="" src="~/assets/images/first-wedding.jpg" alt="">
-                </div>
-
-                <div class="w-1/2 pl-10 mt-8 text-area">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, is a veritatis a illum praesentium excepturi iste? Perferendis veritatis quae non assumenda quibusdam, dolores hic, blanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe deserunt, illo velit veritatis minus optio! Voluptatibus maiores accusantium veniam ex velit reprehenderit saepe quibusdam debitis provident.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur eum optio inventore incidunt perspiciatis, assumenda, nesciunt debitis .</p> 
-                </div>
-                
+    <div class="container container--style container--first p-10 md:p-12">
+        <div class="row m-auto my-8 px-12">
+            <p class="font-bold text-2xl text-center">Let us make your day even more special</p>
+            <div>
+                <p>When you picture a London pub wedding does your imagination immediately take you to The Queen Vic or The Nags Head?!  No longer synonymous with the Trotters, Mitchells and Slaters of the TV world, pub weddings are one of the fastest growing trends in the wedding industry. Couples are eschewing the more formal conventions to make their big day a chance to really express who they are as a couple. The flexibility of our venues can see them offer every kind of day imaginable but putting them and their family and friends at the centre of it. With a focus firmly centred on everyone having a great time – pub weddings are the relaxed and informal choice that continues to grow in popularity.</p>
             </div>
+            <div class="flex flex-wrap mt-16">
+                <div class="w-full">
+                    <ul class="list-reset flex flex-wrap">
+
+                        <li class="flex-1 p-2">
+                            <div class="p-3 bg-white  rounded">
+                                <img class="w-12" src="~/assets/images/icons/champagne.svg">
+                                <p class="m-0">Champagne on arrival</p>
+                            </div>
+                        </li>
         
-        
-    </div><!-- End on Container -->
+                        <li class="flex-1 p-2">
+                            <div class="p-3 bg-white  rounded">
+                                <img class="w-12" src="~/assets/images/icons/bbq.svg">
+                                <p class="m-0">BBQ’s & Buffet</p>
+                            </div>
+                        </li>
+
+                        <li class="flex-1 p-2">
+                            <div class="p-3 bg-white  rounded">
+                                <img class="w-12" src="~/assets/images/icons/wine.svg">
+                                <p class="m-0">Wine corkage</p>
+                            </div>
+                        </li>
+                        
+                        <li class="flex-1 p-2">
+                            <div class="p-3 bg-white  rounded">
+                                <img class="w-12" src="~/assets/images/icons/parking.svg">
+                                <p class="m-0">Ample parking</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="image-divider">
         <picture>
@@ -47,7 +64,6 @@
         <div class="row">
             <div class="testimonials px-16 py-16">
                 <h2 class="text-underline mt-4">Testimonials</h2>
-
                 <ul class="">
                     <li class="testimonials__list-item">
                         <p>Hi Niamh,<br>I just wanted to write you this email to thank not only yourself and Richard but EVERY single person from Graiguenamangh who helped out or contributed in some way to make Saturday the most amazing day of our lives! We had an idea in our heads of what we wanted our wedding day to be like but we also felt we had to be realistic, clearly ye didn't feel the same! No matter what we wanted the answer was 'yes' and whatever we requested was done/sourced/built within a few days! When we arrived down on Wednesday we couldn't believe the amount of lads there who seemed more than happy to help us do whatever was needed to get the venue ready and those same lads were still there working away on Friday night!</p>
@@ -69,14 +85,9 @@
 </template>
 
 <style lang="sass" scoped>
-.content
-    img
-        border: $border
-        box-shadow: $shadow
 
-.text-area
-    p
-        padding: 0 2rem
+.surface1
+
 
 .image-divider
     margin: -2rem 0

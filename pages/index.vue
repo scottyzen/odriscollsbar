@@ -18,13 +18,6 @@
         </div>
     </div>
 
-    <div class="container intro">
-        <div class="row">
-            <h2>Quick History</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus ducimus quam repudiandae recusandae vero consequuntur rem voluptates laudantium architecto ad ex, veritatis similique impedit fugiat quidem deserunt? Facilis non totam voluptates, sit ratione quidem sunt quod fugit debitis ipsam accusamus dolorem beatae accusantium error nostrum doloremque perferendis numquam praesentium sed! Voluptatem cum, veritatis architecto impedit nisi laborum. Repellendus totam possimus ab reprehenderit aliquam voluptatibus expedita corrupti natus provident excepturi nesciunt ad labore recusandae animi commodi vitae obcaecati temporibus iusto, tenetur ratione rerum sed. Laudantium.</p>
-        </div>
-    </div>
-    
     <div class="container">
         <div class="row mb-8">
             <div class="quick-info">
@@ -32,34 +25,34 @@
                     <span class="quick-info__title">Opening Hours</span>
                     <div class="flex">
                         <span class="flex-1">Monday - Thursday</span>
-                        <span>11:30 - 11:30</span>
+                        <span class="font-bold">11:30 - 11:30</span>
                     </div>
                     <div class="flex">
                         <span class="flex-1">Friday - Saturday</span>
-                        <span>11:30 - 12:30</span>
+                        <span class="font-bold">11:30 - 12:30</span>
                     </div>
                     <div class="flex">
                         <span class="flex-1">Sunday</span>
-                        <span>12:00 - 11:00</span>
+                        <span class="font-bold">12:00 - 11:00</span>
                     </div>
                 </div>
                 
                 <div class="quick-info__item">
                     <span class="quick-info__title">Instagram</span>
-                    <p>Tag your photo with <strong class=" text-orange">#odriscollsbar</strong> to see them displayed here</p>
+                    <p>Tag your photo with <strong>#odriscollsbar</strong> to see them displayed here</p>
                 </div>
 
                 <div class="quick-info__item">
                     <span class="quick-info__title">Find Us</span>
                     <div class="icons flex">
                         <div class="icon">
-                            <img src="~/assets/images/icons/Facebook.svg">
+                            <img src="~/assets/images/icons/Facebook-round.svg">
                         </div>
                         <div class="icon">
-                            <img src="~/assets/images/icons/Twitter.svg">
+                            <img src="~/assets/images/icons/Twitter-round.svg">
                         </div>
                         <div class="icon">
-                            <img src="~/assets/images/icons/Instagram.svg">
+                            <img src="~/assets/images/icons/Instagram-round.svg">
                         </div>
                     </div>
                 </div>
@@ -73,9 +66,6 @@
 </template>
 
 <style lang="sass">
-.container
-    +modifier('bottom-gap')
-        margin-bottom: 150px
 
 .quick-info
     margin-top: 4rem

@@ -27,9 +27,6 @@
                         <nuxt-link to="/" exact>Home</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/about" exact class="line-through">About</nuxt-link>
-                    </li>
-                    <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link to="/gallery" exact class="line-through">Gallery</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
@@ -51,9 +48,6 @@
                     <nuxt-link to="/" exact>Home</nuxt-link>
                 </li>
                 <li class="desktop-nav__item">
-                    <nuxt-link to="/about" exact>About</nuxt-link>
-                </li>
-                <li class="desktop-nav__item">
                     <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
                 </li>
                 <li class="desktop-nav__item">
@@ -62,8 +56,21 @@
                 <li class="desktop-nav__item">
                     <nuxt-link to="/faq" exact>FAQ</nuxt-link>
                 </li>
-                <li class="desktop-nav__item desktop-nav__item--last">
+                <li class="desktop-nav__item">
                     <nuxt-link to="/bookings" exact>Bookings</nuxt-link>
+                </li>
+                <li class="desktop-nav__item desktop-nav__item--last">
+                    <ul class="inline-flex social-icons">
+                        <li class="social-icons__icon">
+                            <img src="~/assets/images/icons/Facebook.svg" alt="">
+                        </li>
+                        <li class="social-icons__icon">
+                            <img src="~/assets/images/icons/Instagram.svg" alt="">
+                        </li>
+                        <!-- <li class="social-icons__icon">
+                            <img src="~/assets/images/icons/Twitter.svg" alt="">
+                        </li> -->
+                    </ul>
                 </li>
             </ul>
 
@@ -161,6 +168,15 @@ export default {
                 content: ""
         +modifier('last')
             padding-right: 0
+
+.social-icons
+    list-style-type: none
+    margin-top: -2rem
+    margin-left: -1rem
+    +element('icon')
+        width: 2.2rem
+        transform: translateY(.8rem)
+        padding-bottom: 0
 
 
 .mobile-nav
