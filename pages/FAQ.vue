@@ -1,18 +1,20 @@
 <template>
   <div>
-    <div>
-        
+    <div class="header text-center">
         <picture>
+            <source srcset="~/assets/images/garden-bench-extra-large.jpg" media="(min-width: 1600px)">
             <source srcset="~/assets/images/garden-bench-large.jpg" media="(min-width: 1200px)">
             <source srcset="~/assets/images/garden-bench-medium.jpg" media="(min-width: 576px)">
             <img src="~/assets/images/garden-bench.jpg" alt="Beer garden ready for a wedding">
         </picture>
     </div>
 
-    <div class="container flex flex-wrap container--first">
-        <div class="row">
-            <h1 class=" text-underline">FAQ</h1>
-            <ul class="questions">
+    <div class="container container--style container--bottom-gap">
+        <div class="row m-auto my-8">
+            <div class="text-center">
+                <h1 class="mt-8 text-underline">FAQ</h1>
+            </div>
+            <ul class="questions mx-12">
                 <li>
                     <p class="questions__question">Can ye organize music?</p>
                     <p class="questions__answer">Yes. Wadolor sit amet consectetur adipisicing elit. Tempora, sit.</p>
@@ -44,37 +46,7 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
-
-
-.container
-    text-align: center
-    +modifier('first')
-        transform: translateY(-100px)
-        +mobile
-            transform: translateY(-100px)
-        +tablet
-            transform: translateY(-150px)
-        +desktop
-            transform: translateY(-250px )
-        +ultra-wide
-            transform: translateY(-350px )
-    .row
-        background: $white
-        padding: 3rem 1rem
-        border: 6px solid $light
-
-        width: 100%
-        box-shadow: $shadow
-        +tablet
-            padding: 4rem 3rem
-        +laptop
-            padding: 5rem 4rem
-            .row
-                width: 65%
-        +desktop
-            .row
-                width: 65%
+<style lang="sass">
 
 .questions
     padding: 3rem 2rem

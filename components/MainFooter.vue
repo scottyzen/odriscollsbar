@@ -18,7 +18,7 @@
                         <p>richardodris@gmail.com</p>
                     </div>
                     <div>
-                        <p class="title">Phone</p>
+                        <p class="title">Tel</p>
                         <p>+353 59 97 24 124</p>
                     </div>
                     <div>

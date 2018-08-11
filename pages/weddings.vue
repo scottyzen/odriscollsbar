@@ -1,14 +1,15 @@
 <template>
   <div>
-    <div class="header header--style mb-8">
+    <div class="header">
         <picture>
+            <source srcset="~/assets/images/garden-extra-large.jpg" media="(min-width: 2000px)">
             <source srcset="~/assets/images/garden-large.jpg" media="(min-width: 1200px)">
             <source srcset="~/assets/images/garden-medium.jpg" media="(min-width: 576px)">
             <img src="~/assets/images/garden.jpg" alt="Beer garden ready for a wedding">
         </picture>
     </div>
     
-    <div class="container container--style container--first p-10 md:p-12">
+    <div class="container container--style p-10 md:p-12">
         <div class="row m-auto my-8 px-12">
             <p class="font-bold text-2xl text-center">Let us make your day even more special</p>
             <div>
@@ -84,10 +85,7 @@
   </div>
 </template>
 
-<style lang="sass" scoped>
-
-.surface1
-
+<style lang="sass">
 
 .image-divider
     margin: -2rem 0

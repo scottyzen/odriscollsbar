@@ -25,7 +25,8 @@ html
 .container
     margin: auto
     width: calc(100% - 1rem)
-    
+    z-index: 20
+    position: relative
     +mobile 
         max-width: calc(#{$mobile-width} - 2%)
     
@@ -45,18 +46,6 @@ html
         background: $white
         border: $border
         box-shadow: $shadow
-    +modifier('first')
-        transform: translateY(-100px)
-        margin-bottom: -100px
-        +tablet
-            transform: translateY(-150px)
-            margin-bottom: -150px
-        +desktop
-            transform: translateY(-200px)
-            margin-bottom: calc(-200px - 4rem)
-        +ultra-wide
-            transform: translateY(-350px)
-            margin-bottom: -350px
     +modifier('bottom-gap')
         margin-bottom: 100px
 
@@ -65,7 +54,7 @@ html
     +mobile
         margin-bottom: -100px
     +tablet
-        margin-bottom: -15%
+        margin-bottom: -25%
     +desktop
-        margin-bottom: -10% 
+        margin-bottom: -25% 
 </style>

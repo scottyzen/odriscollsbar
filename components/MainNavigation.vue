@@ -27,7 +27,7 @@
                         <nuxt-link to="/" exact>Home</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/gallery" exact class="line-through">Gallery</nuxt-link>
+                        <nuxt-link to="/gallery" >Gallery</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
@@ -62,10 +62,10 @@
                 <li class="desktop-nav__item desktop-nav__item--last">
                     <ul class="inline-flex social-icons">
                         <li class="social-icons__icon">
-                            <img src="~/assets/images/icons/Facebook.svg" alt="">
+                            <img src="~/assets/images/icons/Facebook.svg" alt="facebook logo">
                         </li>
                         <li class="social-icons__icon">
-                            <img src="~/assets/images/icons/Instagram.svg" alt="">
+                            <img src="~/assets/images/icons/Instagram.svg" alt="instagram logo">
                         </li>
                         <!-- <li class="social-icons__icon">
                             <img src="~/assets/images/icons/Twitter.svg" alt="">
@@ -129,12 +129,12 @@ export default {
         
     .hamburger
         padding: (5px 0 !important)
-    .hamburger:focus
-        outline: none
-        cursor: pointer
         .hamburger-inner[data-v-42076448]
             &, &::before, &::after
                 background-color: $yellow
+    .hamburger:focus
+        outline: none
+        cursor: pointer
 
 
 .desktop-nav
@@ -174,8 +174,8 @@ export default {
     margin-top: -2rem
     margin-left: -1rem
     +element('icon')
-        width: 2.2rem
-        transform: translateY(.8rem)
+        width: 2rem
+        transform: translateY(.65rem)
         padding-bottom: 0
 
 

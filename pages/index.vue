@@ -1,14 +1,15 @@
 <template>
   <div>
-    <div class="header header--style mb-8">
+    <div class="header">
         <picture>
+            <source srcset="~/assets/images/garden-extra-large.jpg" media="(min-width: 2000px)">
             <source srcset="~/assets/images/garden-large.jpg" media="(min-width: 1200px)">
             <source srcset="~/assets/images/garden-medium.jpg" media="(min-width: 576px)">
             <img src="~/assets/images/garden.jpg" alt="Beer garden ready for a wedding">
         </picture>
     </div>
 
-    <div class="container container--style container--first container--bottom-gap p-10 md:p-16">
+    <div class="container container--style container--bottom-gap p-10 md:p-16">
         <div class="row max-w-md m-auto my-8">
             <p><span class="first-letter">W</span>elcome ipsum dolor sit amet, consectetur adipisicing elit. Officiis accusamus iste temporibus optio provident amet facere consequuntur dolorem porro tempora. Pblanditiis laudantium, perspiciatis ullam porro. Maiores impedit accusantium non saepe. Quibusdam, porro eligendi facere harum molestiae error. Consectetur, quaerat praesentium.</p>
             <p class="font-bold text-xl">"Yeipsum dolor, sit amet consectetur adipisicing elit. Consectetur optio, nesciunt debitis nostrum dolorum  ea ipsam, aliquid beatae hic."</p>
