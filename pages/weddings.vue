@@ -18,29 +18,29 @@
                 <div class="w-full">
                     <ul class="list-reset flex flex-wrap">
 
-                        <li class="flex-1 p-2">
-                            <div class="p-3 bg-white  rounded">
+                        <li class="flex-1 p-3 pl-0">
+                            <div class="p-3 bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/champagne.svg">
                                 <p class="m-0">Champagne on arrival</p>
                             </div>
                         </li>
         
-                        <li class="flex-1 p-2">
-                            <div class="p-3 bg-white  rounded">
+                        <li class="flex-1 p-3">
+                            <div class="p-3 bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/bbq.svg">
                                 <p class="m-0">BBQ’s & Buffet</p>
                             </div>
                         </li>
 
-                        <li class="flex-1 p-2">
-                            <div class="p-3 bg-white  rounded">
+                        <li class="flex-1 p-3">
+                            <div class="p-3 bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/wine.svg">
                                 <p class="m-0">Wine corkage</p>
                             </div>
                         </li>
                         
-                        <li class="flex-1 p-2">
-                            <div class="p-3 bg-white  rounded">
+                        <li class="flex-1 p-3 pr-0">
+                            <div class="p-3 bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/parking.svg">
                                 <p class="m-0">Ample parking</p>
                             </div>
