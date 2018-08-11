@@ -25,7 +25,6 @@ html
 .container
     margin: auto
     width: calc(100% - 1rem)
-    z-index: 20
     position: relative
     +mobile 
         max-width: calc(#{$mobile-width} - 2%)
@@ -46,6 +45,7 @@ html
         background: $white
         border: $border
         box-shadow: $shadow
+        z-index: 1
     +modifier('bottom-gap')
         margin-bottom: 100px
 

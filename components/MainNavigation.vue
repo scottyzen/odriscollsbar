@@ -23,20 +23,20 @@
             <!--  Mobile Navigation List -->
             <transition name="slide">
                 <ul class="mobile-nav" v-if="showNav">
-                    <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/" exact>Home</nuxt-link>
+                    <li class="mobile-nav__item mobile-nav__item--first" @click="toggleNav()">
+                        <nuxt-link class="mobile-nav__link pt-16" to="/" exact>Home</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/gallery" >Gallery</nuxt-link>
+                        <nuxt-link class="mobile-nav__link" to="/gallery" >Gallery</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
+                        <nuxt-link class="mobile-nav__link" to="/weddings" exact>Weddings</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/faq" exact>FAQ</nuxt-link>
+                        <nuxt-link class="mobile-nav__link" to="/faq" exact>FAQ</nuxt-link>
                     </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link to="/bookings" exact class="line-through">Bookings</nuxt-link>
+                        <nuxt-link class="mobile-nav__link" to="/bookings" exact>Bookings</nuxt-link>
                     </li>
                 </ul>
             </transition>
@@ -162,6 +162,7 @@ export default {
             width: 1.75em
             margin-left: -1.75em
 
+
         // Modifier
         +modifier('first')
             &::before
@@ -191,7 +192,7 @@ export default {
     padding: 5rem 0 2rem
     margin-top: -3rem
     font-weight: 700
-    z-index: 9998
+    z-index: 999
 
     // Element
     +element('item')
@@ -200,14 +201,20 @@ export default {
         z-index: 10
         max-width: 300px
         margin: auto
-        padding: 1.2rem
-        a
-            color: #666a75
-            margin: 1rem 2rem
-        .nuxt-link-active
-            color: $yellow
-            // background-color: $yellow
-            border-bottom: 3px solid $yellow
+        +modifier('first')
+            margin-top: 2rem
+    +element('link')
+        padding: 1.5rem 0 .5rem
+        margin-top: .5rem 
+        display: block
+        color: #666a75
+        &:hover
+            color: $white
+            
+    .nuxt-link-active, .nuxt-link-active:hover
+        color: $yellow
+        border-bottom: 3px solid $yellow
+
 
 // Animation and Transitions
 .slide-enter-active
