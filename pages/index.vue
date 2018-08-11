@@ -1,12 +1,13 @@
 <template>
   <div>
     <div class="header">
-        <picture>
+        <!-- <picture>
             <source srcset="~/assets/images/garden-extra-large.jpg" media="(min-width: 2000px)">
             <source srcset="~/assets/images/garden-large.jpg" media="(min-width: 1200px)">
             <source srcset="~/assets/images/garden-medium.jpg" media="(min-width: 576px)">
             <img src="~/assets/images/garden.jpg" alt="Beer garden ready for a wedding">
-        </picture>
+        </picture> -->
+        <lazy-image imageName="garden" description="Beer garden ready for a wedding" />
     </div>
 
     <div class="container container--style container--bottom-gap p-10 md:p-16">

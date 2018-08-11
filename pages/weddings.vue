@@ -10,7 +10,7 @@
     </div>
     
     <div class="container container--style p-10 md:p-12">
-        <div class="row m-auto my-8 px-12">
+        <div class="row m-auto my-8 md:px-12">
             <p class="font-bold text-2xl text-center">Let us make your day even more special</p>
             <div>
                 <p>When you picture a London pub wedding does your imagination immediately take you to The Queen Vic or The Nags Head?!  No longer synonymous with the Trotters, Mitchells and Slaters of the TV world, pub weddings are one of the fastest growing trends in the wedding industry. Couples are eschewing the more formal conventions to make their big day a chance to really express who they are as a couple. The flexibility of our venues can see them offer every kind of day imaginable but putting them and their family and friends at the centre of it. With a focus firmly centred on everyone having a great time – pub weddings are the relaxed and informal choice that continues to grow in popularity.</p>
@@ -19,28 +19,28 @@
                 <div class="w-full">
                     <ul class="list-reset flex flex-wrap">
 
-                        <li class="flex-1 p-3 pl-0">
+                        <li class="flex-1 m-2">
                             <div class="p-3 bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/champagne.svg">
                                 <p class="m-0">Champagne on arrival</p>
                             </div>
                         </li>
         
-                        <li class="flex-1 p-3">
+                        <li class="flex-1 m-2">
                             <div class="p-3 bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/bbq.svg">
                                 <p class="m-0">BBQ’s & Buffet</p>
                             </div>
                         </li>
 
-                        <li class="flex-1 p-3">
+                        <li class="flex-1 m-2">
                             <div class="p-3 bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/wine.svg">
                                 <p class="m-0">Wine corkage</p>
                             </div>
                         </li>
                         
-                        <li class="flex-1 p-3 pr-0">
+                        <li class="flex-1 m-2">
                             <div class="p-3 bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/parking.svg">
                                 <p class="m-0">Ample parking</p>

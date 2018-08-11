@@ -50,6 +50,7 @@ html
         margin-bottom: 100px
 
 .header
+    text-align: center
     margin-bottom: -100px
     +mobile
         margin-bottom: -100px

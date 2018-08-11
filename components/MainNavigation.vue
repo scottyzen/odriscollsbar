@@ -122,7 +122,7 @@ export default {
     flex: 1
     text-align: right
     padding: 1.5rem 2rem
-    z-index: 10
+    z-index: 9999
     
     +laptop
         display: none
@@ -186,10 +186,12 @@ export default {
     flex-flow: column
     position: absolute
     left: 0
-    background: $light
+    background: $dark
+    border: 6px solid lighten($dark, 5%)
     padding: 5rem 0 2rem
     margin-top: -3rem
     font-weight: 700
+    z-index: 9998
 
     // Element
     +element('item')
@@ -201,12 +203,11 @@ export default {
         padding: 1.2rem
         a
             color: #666a75
-            padding: 1rem 4rem
-        a:hover
-            background-color: lighten($light, 5%)
-            color: $primary
+            margin: 1rem 2rem
         .nuxt-link-active
-            color: $primary
+            color: $yellow
+            // background-color: $yellow
+            border-bottom: 3px solid $yellow
 
 // Animation and Transitions
 .slide-enter-active
