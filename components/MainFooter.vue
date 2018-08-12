@@ -3,32 +3,34 @@
         <div class="container">
             <div class="contact-info w-full p-8 sm:p-10 md:p-12 xl:p-16 lg:w-11/20">
                 <h2 class="text-underline">Get in Touch</h2>
-                <div class="columns">
-                    <div>
-                        <p class="heading">Address</p>
-                        <p>
+                <div class="flex flex-wrap">
+                    <div class="w-full flex flex-wrap md:w-1/2">
+                        <p class="heading w-1/3 md:w-full">Address</p>
+                        <p class="w-2/3 md:w-full">
                             O' Driscolls Bar,<br>
-                            Tinnahinch, <br>
-                            Graiguenanagh, <br>
+                            Tinnahinch,<br>
+                            Graiguenanagh,<br>
                             Co. Kilkenny
                         </p>
                     </div>
-                    <div>
-                        <p class="heading">Email</p>
-                        <p>richardodris@gmail.com</p>
-                    </div>
-                    <div>
-                        <p class="heading">Tel</p>
-                        <p>+353 59 97 24 124</p>
-                    </div>
-                    <div>
-                        <p class="heading">Social</p>
-                        <ul>
+                    <div class="w-full flex flex-wrap md:w-1/2 content-start">
+                        <p class="heading w-1/3 md:w-full">Social</p>
+                        <ul class="mb-4 list-reset w-2/3 md:w-full">
                             <li>Instagram</li>
                             <li>Facebook</li>
                             <li>Twitter</li>
                         </ul>
                     </div>
+                    <div class="w-full flex flex-wrap md:w-1/2">
+                        <p class="heading w-1/3 md:w-full">Email</p>
+                        <p class="w-2/3 md:w-full">odriscolls@gmail.com</p>
+                    </div>
+                    
+                    <div class="w-full flex flex-wrap md:w-1/2">
+                        <p class="heading w-1/3 md:w-full">Tel</p>
+                        <p class="w-2/3 md:w-full">059 97 24 124</p>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -65,7 +67,7 @@
                 </div> -->
 
                 <!-- copywright Information -->
-                <div class="copywright w-full flex justify-between px-6">
+                <div class="copywright text-sm w-full flex justify-between px-6">
                     <p>© O' Driscolls Bar 2018</p>
                     <p>by Scott Kennedy</p>
                 </div>
@@ -332,31 +334,22 @@ export default {
 .wrapper 
     margin-top: 8rem
 
-.columns
-    column-count: 2
-    column-gap: 8rem
-    break-inside: avoid
-    column-rule: 2px solid $light
-    ul 
-        list-style-type: none
-
 .text-underline
     margin-bottom: 3rem
 
 .contact-info
     background: $white
     border: $border
-    display: inline-block
     box-shadow: $shadow
     z-index: 1
     position: relative
     h2 
         margin-top: 0
-        font-size: 2.4rem
+        font-size: 2.375rem
     .heading
         font-weight: bold
-        font-size: 1.3rem
-        margin-bottom: .25rem
+        font-size: 1.2rem
+        margin-bottom: .2rem
 
 .map
     margin-top: -14rem
@@ -369,7 +362,7 @@ export default {
 
 .bottom-footer
     background-color: #17263B
-    padding: 2rem 1rem 1rem
+    padding-top: 15px
     margin-top: -15px
     position: relative
     z-index: 2

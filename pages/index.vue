@@ -55,7 +55,7 @@
 <br>
 
     <div class="container container--style container--style-dark">
-        <div class="row px-8">
+        <div class="row p-8 md:py-0">
             <div class="quick-info">
                 <div class="quick-info__item">
                     <span class="quick-info__title">Opening Hours</span>
