@@ -46,6 +46,9 @@ html
         border: $border
         box-shadow: $shadow
         z-index: 1
+    +modifier('style-dark')
+        background: $dark
+        border: 6px solid lighten($dark, 5%)
     +modifier('bottom-gap')
         margin-bottom: 100px
 

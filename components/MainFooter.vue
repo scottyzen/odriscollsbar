@@ -5,7 +5,7 @@
                 <h2 class="text-underline">Get in Touch</h2>
                 <div class="columns">
                     <div>
-                        <p class="title">Address</p>
+                        <p class="heading">Address</p>
                         <p>
                             O' Driscolls Bar,<br>
                             Tinnahinch, <br>
@@ -14,15 +14,15 @@
                         </p>
                     </div>
                     <div>
-                        <p class="title">Email</p>
+                        <p class="heading">Email</p>
                         <p>richardodris@gmail.com</p>
                     </div>
                     <div>
-                        <p class="title">Tel</p>
+                        <p class="heading">Tel</p>
                         <p>+353 59 97 24 124</p>
                     </div>
                     <div>
-                        <p class="title">Social</p>
+                        <p class="heading">Social</p>
                         <ul>
                             <li>Instagram</li>
                             <li>Facebook</li>
@@ -330,7 +330,7 @@ export default {
 
 <style lang="sass" scoped>
 .wrapper 
-    margin-top: 10rem
+    margin-top: 8rem
 
 .columns
     column-count: 2
@@ -352,9 +352,10 @@ export default {
     position: relative
     h2 
         margin-top: 0
-    .title
+        font-size: 2.4rem
+    .heading
         font-weight: bold
-        font-size: 1.4rem
+        font-size: 1.3rem
         margin-bottom: .25rem
 
 .map
