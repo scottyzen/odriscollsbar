@@ -9,7 +9,7 @@
         </picture>
     </div>
     
-    <div class="container container--style p-10 md:p-12">
+    <div class="container container--style p-8 sm:p-10 md:p-12 xl:p-16">
         <div class="row m-auto my-8 md:px-12">
             <p class="font-bold text-2xl text-center">Let us make your day even more special</p>
             <div>
@@ -63,7 +63,7 @@
 
     <div class="container container--style mb-16">
         <div class="row">
-            <div class="testimonials px-16 py-16">
+            <div class="testimonials py-16 p-8 sm:p-10 md:p-12 xl:p-16">
                 <h2 class="text-underline mt-4">Testimonials</h2>
                 <ul class="">
                     <li class="testimonials__list-item">
