@@ -207,7 +207,7 @@ export default {
         padding: 1.5rem 0 .5rem
         margin-top: .5rem 
         display: block
-        color: #666a75
+        color: darken($white, 10%)
         &:hover
             color: $white
             

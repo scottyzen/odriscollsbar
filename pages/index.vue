@@ -10,7 +10,7 @@
         <lazy-image imageName="garden" description="Beer garden ready for a wedding" />
     </div>
 
-    <div class="container container--style container--bottom-gap p-10 md:p-12">
+    <div class="container container--style container--bottom-gap p-8 sm:p-10 md:p-12 xl:p-16">
         <div class="row max-w-md m-auto mt-8 mb-16">
             <div class=" text-center">
                 <h2 class="text-underline text-4xl mb-16">O' Driscolls Bar</h2>
@@ -106,7 +106,7 @@
 .quick-info
     color: darken($white, 15%)
     +element('item')
-        padding: 1rem
+        padding: 1rem 0
         // color: lighten($dark, 50%)
     +element('title')
         color: darken($white, 10%)

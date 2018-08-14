@@ -14,7 +14,7 @@
             <div class="text-center">
                 <h1 class="mt-8 text-underline">FAQ</h1>
             </div>
-            <ul class="questions mx-12">
+            <ul class="questions p-8 sm:p-10 md:p-12 xl:p-16">
                 <li>
                     <p class="questions__question">Can ye organize music?</p>
                     <p class="questions__answer">Yes. Wadolor sit amet consectetur adipisicing elit. Tempora, sit.</p>
@@ -49,7 +49,6 @@
 <style lang="sass">
 
 .questions
-    padding: 3rem 2rem
     list-style-type: none
     text-align: left
     +tablet

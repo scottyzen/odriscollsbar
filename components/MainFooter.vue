@@ -352,7 +352,7 @@ export default {
         margin-bottom: .2rem
 
 .map
-    margin-top: -14rem
+    margin-top: -8rem
     z-index: 0
     width: 120%
     height: 500px
