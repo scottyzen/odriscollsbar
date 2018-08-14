@@ -14,34 +14,35 @@
             <p class="font-bold text-2xl text-center">Let us make your day even more special</p>
             <div>
                 <p>When you picture a London pub wedding does your imagination immediately take you to The Queen Vic or The Nags Head?!  No longer synonymous with the Trotters, Mitchells and Slaters of the TV world, pub weddings are one of the fastest growing trends in the wedding industry. Couples are eschewing the more formal conventions to make their big day a chance to really express who they are as a couple. The flexibility of our venues can see them offer every kind of day imaginable but putting them and their family and friends at the centre of it. With a focus firmly centred on everyone having a great time – pub weddings are the relaxed and informal choice that continues to grow in popularity.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam minus dolorum voluptates porro id nostrum sequi sit blanditiis! Aliquam officiis error distinctio minima perferendis rem consequatur ex ipsa sequi at, quam quisquam, atque pariatur.</p>
             </div>
             <div class="flex flex-wrap mt-16">
                 <div class="w-full">
                     <ul class="list-reset flex flex-wrap">
 
-                        <li class="flex-1 m-2">
-                            <div class="p-3 bg-white text-center rounded shadow">
+                        <li class="w-1/2 mb-4 lg:w-1/4">
+                            <div class="m-2 p-3 h-full bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/champagne.svg">
                                 <p class="m-0">Champagne on arrival</p>
                             </div>
                         </li>
         
-                        <li class="flex-1 m-2">
-                            <div class="p-3 bg-white text-center rounded shadow">
+                        <li class="w-1/2 mb-4 lg:w-1/4">
+                            <div class="m-2 p-3 h-full bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/bbq.svg">
-                                <p class="m-0">BBQ’s & Buffet</p>
+                                <p class="m-0">BBQ’s & Buffet style food</p>
                             </div>
                         </li>
 
-                        <li class="flex-1 m-2">
-                            <div class="p-3 bg-white text-center rounded shadow">
+                        <li class="w-1/2 mb-4 lg:w-1/4">
+                            <div class="m-2 p-3 h-full bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/wine.svg">
                                 <p class="m-0">Wine corkage</p>
                             </div>
                         </li>
                         
-                        <li class="flex-1 m-2">
-                            <div class="p-3 bg-white text-center rounded shadow">
+                        <li class="w-1/2 mb-4 lg:w-1/4">
+                            <div class="m-2 p-3 h-full bg-white text-center rounded shadow">
                                 <img class="w-12" src="~/assets/images/icons/parking.svg">
                                 <p class="m-0">Ample parking</p>
                             </div>

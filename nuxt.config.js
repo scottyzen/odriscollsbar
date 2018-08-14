@@ -43,7 +43,10 @@ module.exports = {
 
 
 	// Plugins
-	plugins: ['~/plugins/core-compontents.js', '~/plugins/vue2-google-maps.js'],
+	plugins: ['~/plugins/core-compontents.js', '~/plugins/vue2-google-maps.js', {
+		src: '~plugins/datepicker.js',
+		ssr: false
+	}],
 
 	// Modules
 	modules: [
