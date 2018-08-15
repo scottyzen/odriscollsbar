@@ -69,7 +69,7 @@
                 <!-- copywright Information -->
                 <div class="copywright text-sm w-full flex justify-between px-6">
                     <p>© O' Driscolls Bar 2018</p>
-                    <p>by Scott Kennedy</p>
+                    <!-- <p>by Scott Kennedy</p> -->
                 </div>
             </div>
         </div>
