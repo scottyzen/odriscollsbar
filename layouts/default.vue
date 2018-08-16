@@ -54,11 +54,13 @@ html
 
 .header
     text-align: center
-    margin-bottom: -100px
+    margin-bottom: -15%
     +mobile
-        margin-bottom: -100px
+        margin-bottom: -15%
     +tablet
-        margin-bottom: -25%
+        margin-bottom: -17.50%
     +desktop
-        margin-bottom: -25% 
+        margin-bottom: -20%
+    +ultra-wide
+        margin-bottom: -22.5%
 </style>

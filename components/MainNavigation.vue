@@ -26,9 +26,9 @@
                     <li class="mobile-nav__item mobile-nav__item--first" @click="toggleNav()">
                         <nuxt-link class="mobile-nav__link pt-16" to="/" exact>Home</nuxt-link>
                     </li>
-                    <!-- <li class="mobile-nav__item" @click="toggleNav()">
+                    <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link class="mobile-nav__link" to="/gallery" >Gallery</nuxt-link>
-                    </li> -->
+                    </li>
                     <li class="mobile-nav__item" @click="toggleNav()">
                         <nuxt-link class="mobile-nav__link" to="/weddings" exact>Weddings</nuxt-link>
                     </li>
@@ -47,9 +47,9 @@
                 <li class="desktop-nav__item desktop-nav__item--first">
                     <nuxt-link to="/" exact>Home</nuxt-link>
                 </li>
-                <!-- <li class="desktop-nav__item">
+                <li class="desktop-nav__item">
                     <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
-                </li> -->
+                </li>
                 <li class="desktop-nav__item">
                     <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
                 </li>
