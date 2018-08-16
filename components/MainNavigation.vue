@@ -47,12 +47,12 @@
                 <li class="desktop-nav__item desktop-nav__item--first">
                     <nuxt-link to="/" exact>Home</nuxt-link>
                 </li>
-                <li class="desktop-nav__item">
-                    <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
-                </li>
                 <!-- <li class="desktop-nav__item">
-                    <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
+                    <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
                 </li> -->
+                <li class="desktop-nav__item">
+                    <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
+                </li>
                 <li class="desktop-nav__item">
                     <nuxt-link to="/faq" exact>FAQ</nuxt-link>
                 </li>
