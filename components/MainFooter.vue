@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <div class="container">
-            <div class="contact-info w-full p-8 sm:p-10 md:p-12 xl:p-16 lg:w-11/20">
+            <div class="contact-info w-full z-10 p-8 sm:p-10 md:p-12 xl:p-16 lg:w-11/20">
                 <h2 class="text-underline">Get in Touch</h2>
                 <div class="flex flex-wrap">
                     <div class="w-full flex flex-wrap md:w-1/2">
@@ -341,7 +341,6 @@ export default {
     background: $white
     border: $border
     box-shadow: $shadow
-    z-index: 1
     position: relative
     h2 
         margin-top: 0

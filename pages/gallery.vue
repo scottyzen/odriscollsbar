@@ -9,11 +9,85 @@
         </picture>
     </div>
     <div class="container container--style p-10 md:p-12">
-        <div class="row">
-            <div class="text-center">
+        <div class="row flex flex-wrap">
+            <div class="text-center w-full mb-8 lg:mb-16">
                 <h2 class="text-underline">Gallery</h2>
+                <br>
+                <p class=" max-w-md m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea rem unde nulla alias magni asperiores, nemo mollitia nostrum! Necessitatibus!</p>
+            </div>
+            <gallery :images="images" :index="index" @close="index = null"></gallery>
+
+            <!-- Gallery options -->
+            <div class="flex flex-wrap align-top w-full md:w-1/4">
+                <div class="text-grey-dark">
+                    <div class="type w-full">
+                        <p class="font-bold text-xs text-orange uppercase">View mode</p>
+                        <p class="m-0">Full images</p>
+                        <p class="m-0">Thumbnails</p>
+                    </div>
+                    <br>
+                    <div class="type w-full">
+                        <p class="font-bold text-xs text-orange uppercase">Type</p>
+                        <p class="m-0">Popular</p>
+                        <p class="m-0">Recent</p>
+                        <p class="m-0">Videos</p>
+                    </div>
+                    <br>
+                    <div class="type w-full">
+                        <p class="font-bold text-xs text-orange uppercase">Tags</p>
+                        <p class="m-0">BBQ</p>
+                        <p class="m-0">Funny</p>
+                        <p class="m-0">Music</p>
+                        <p class="m-0">Weddings</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-between w-full md:w-3/4">
+                <div
+                class="image mb-6 shadow"
+                v-for="(image, imageIndex) in images"
+                :key="imageIndex"
+                @click="index = imageIndex"
+                :style="{ backgroundImage: 'url(' + image + ')' }"
+                ><span>{{image.title}}</span></div>
             </div>
         </div>
     </div>
   </div>
 </template>
+<script>
+import galleryImages from "~/assets/js/gallery-images.js";
+export default {
+    data () {
+      return {
+        images: galleryImages,
+        index: null
+      };
+    }
+}
+</script>
+<style lang="sass">
+.image
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center center
+    min-height: 150px
+    border: $border
+    width: 100%
+    +tablet
+        width: 47.5%
+    +laptop
+        width: 30%
+
+.blueimp-gallery
+    .title
+        background: black
+    .close
+        margin: 0
+        padding: 20px
+        color: $yellow
+    .slide-content
+        max-width: 80%
+        max-height: 80%
+</style>
