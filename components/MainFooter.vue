@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <footer class="wrapper">
         <div class="container">
             <div class="contact-info w-full z-10 p-8 sm:p-10 md:p-12 xl:p-16 lg:w-11/20">
                 <h2 class="text-underline">Get in Touch</h2>
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 </template>
 <script>
 

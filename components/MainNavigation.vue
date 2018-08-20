@@ -1,11 +1,11 @@
 <template>
-    <div class="nav nav--style relative shadow-lg">
+    <nav class="nav nav--style relative shadow-lg">
         <div class="flex container">
 
             <!-- Logo -->
             <div class="logo self-center">
                 <nuxt-link  to="/">
-                    <img src="~/assets/images/logo.png" width="160px">
+                    <img src="~/assets/images/logo.png" width="160">
                 </nuxt-link>
             </div>
 
@@ -75,7 +75,7 @@
             </ul>
 
         </div>
-    </div>
+    </nav>
 </template>
 
 <script>
