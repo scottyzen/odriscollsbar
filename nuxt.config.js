@@ -1,3 +1,13 @@
+const PurgecssPlugin = require('purgecss-webpack-plugin')
+const glob = require('glob-all')
+const path = require('path')
+
+class TailwindExtractor {
+	static extract(content) {
+		return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+	}
+}
+
 module.exports = {
 	// Server side rendering turned on
 	mode: 'universal',
@@ -36,11 +46,6 @@ module.exports = {
 		height: '4px'
 	},
 
-	// Global css
-	css: ['@/assets/css/app.css',
-		'@/assets/css/modular.css',
-	],
-
 
 	// Plugins
 	plugins: [
@@ -66,23 +71,38 @@ module.exports = {
 
 	// Build configuration
 	build: {
-		/*
-		 ** You can extend Webpack config here
-		 ** Run ESLint on save
-		 */
+		extractCSS: true,
+		postcss: [
+			require('tailwindcss')('./tailwind.js'),
+			require('autoprefixer')
+		],
 		extend(config, {
-			isDev,
-			isClient
+			isDev
 		}) {
-			if (isDev && isClient) {
-				config.module.rules.push({
-					enforce: 'pre',
-					test: /\.(js|vue)$/,
-					loader: 'eslint-loader',
-					exclude: /(node_modules)/
-				})
+			if (!isDev) {
+				config.plugins.push(
+					new PurgecssPlugin({
+						// purgecss configuration
+						// https://github.com/FullHuman/purgecss
+						paths: glob.sync([
+							path.join(__dirname, './pages/**/*.vue'),
+							path.join(__dirname, './layouts/**/*.vue'),
+							path.join(__dirname, './components/**/*.vue')
+						]),
+						extractors: [{
+							extractor: TailwindExtractor,
+							extensions: ['vue']
+						}],
+						whitelist: ['html', 'body', 'nuxt-progress']
+					})
+				)
 			}
-		},
-		vendor: ['vue2-google-maps']
-	}
+		}
+	},
+	// Global css
+	css: [
+		'@/assets/css/app.css',
+		'@/assets/css/modular.css'
+	],
+	vendor: ['vue2-google-maps']
 }
