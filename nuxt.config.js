@@ -71,7 +71,7 @@ module.exports = {
 
 	// Build configuration
 	// build: {
-	// 	extractCSS: true,
+	extractCSS: true,
 	// 	postcss: [
 	// 		require('tailwindcss')('./tailwind.js'),
 	// 		require('autoprefixer')
