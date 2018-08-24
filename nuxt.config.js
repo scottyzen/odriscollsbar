@@ -1,12 +1,12 @@
-const PurgecssPlugin = require('purgecss-webpack-plugin')
-const glob = require('glob-all')
-const path = require('path')
+// const PurgecssPlugin = require('purgecss-webpack-plugin')
+// const glob = require('glob-all')
+// const path = require('path')
 
-class TailwindExtractor {
-	static extract(content) {
-		return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-	}
-}
+// class TailwindExtractor {
+// 	static extract(content) {
+// 		return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+// 	}
+// }
 
 module.exports = {
 	// Server side rendering turned on
@@ -70,35 +70,35 @@ module.exports = {
 	],
 
 	// Build configuration
-	build: {
-		extractCSS: true,
-		postcss: [
-			require('tailwindcss')('./tailwind.js'),
-			require('autoprefixer')
-		],
-		extend(config, {
-			isDev
-		}) {
-			if (!isDev) {
-				config.plugins.push(
-					new PurgecssPlugin({
-						// purgecss configuration
-						// https://github.com/FullHuman/purgecss
-						paths: glob.sync([
-							path.join(__dirname, './pages/**/*.vue'),
-							path.join(__dirname, './layouts/**/*.vue'),
-							path.join(__dirname, './components/**/*.vue')
-						]),
-						extractors: [{
-							extractor: TailwindExtractor,
-							extensions: ['vue']
-						}],
-						whitelist: ['html', 'body', 'nuxt-progress', 'map', 'vue-map']
-					})
-				)
-			}
-		}
-	},
+	// build: {
+	// 	extractCSS: true,
+	// 	postcss: [
+	// 		require('tailwindcss')('./tailwind.js'),
+	// 		require('autoprefixer')
+	// 	],
+	// 	extend(config, {
+	// 		isDev
+	// 	}) {
+	// 		if (!isDev) {
+	// 			config.plugins.push(
+	// 				new PurgecssPlugin({
+	// 					// purgecss configuration
+	// 					// https://github.com/FullHuman/purgecss
+	// 					paths: glob.sync([
+	// 						path.join(__dirname, './pages/**/*.vue'),
+	// 						path.join(__dirname, './layouts/**/*.vue'),
+	// 						path.join(__dirname, './components/**/*.vue')
+	// 					]),
+	// 					extractors: [{
+	// 						extractor: TailwindExtractor,
+	// 						extensions: ['vue']
+	// 					}],
+	// 					whitelist: ['html', 'body', 'nuxt-progress', 'map', 'vue-map']
+	// 				})
+	// 			)
+	// 		}
+	// 	}
+	// },
 	// Global css
 	css: [
 		'@/assets/css/app.css',
