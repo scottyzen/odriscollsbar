@@ -192,42 +192,42 @@ module.exports = {
 	|
 	*/
 
-	// fonts: {
-	// 	'sans': [
-	// 		'system-ui',
-	// 		'BlinkMacSystemFont',
-	// 		'-apple-system',
-	// 		'Segoe UI',
-	// 		'Roboto',
-	// 		'Oxygen',
-	// 		'Ubuntu',
-	// 		'Cantarell',
-	// 		'Fira Sans',
-	// 		'Droid Sans',
-	// 		'Helvetica Neue',
-	// 		'sans-serif',
-	// 	],
-	// 	'serif': [
-	// 		'Constantia',
-	// 		'Lucida Bright',
-	// 		'Lucidabright',
-	// 		'Lucida Serif',
-	// 		'Lucida',
-	// 		'DejaVu Serif',
-	// 		'Bitstream Vera Serif',
-	// 		'Liberation Serif',
-	// 		'Georgia',
-	// 		'serif',
-	// 	],
-	// 	'mono': [
-	// 		'Menlo',
-	// 		'Monaco',
-	// 		'Consolas',
-	// 		'Liberation Mono',
-	// 		'Courier New',
-	// 		'monospace',
-	// 	]
-	// },
+	fonts: {
+		'sans': [
+			'system-ui',
+			'BlinkMacSystemFont',
+			'-apple-system',
+			'Segoe UI',
+			'Roboto',
+			'Oxygen',
+			'Ubuntu',
+			'Cantarell',
+			'Fira Sans',
+			'Droid Sans',
+			'Helvetica Neue',
+			'sans-serif',
+		],
+		'serif': [
+			'Constantia',
+			'Lucida Bright',
+			'Lucidabright',
+			'Lucida Serif',
+			'Lucida',
+			'DejaVu Serif',
+			'Bitstream Vera Serif',
+			'Liberation Serif',
+			'Georgia',
+			'serif',
+		],
+		'mono': [
+			'Menlo',
+			'Monaco',
+			'Consolas',
+			'Liberation Mono',
+			'Courier New',
+			'monospace',
+		]
+	},
 
 
 	/*
@@ -782,9 +782,9 @@ module.exports = {
 	|
 	*/
 
-	// svgFill: {
-	// 	'current': 'currentColor',
-	// },
+	svgFill: {
+		'current': 'currentColor',
+	},
 
 
 	/*
@@ -801,9 +801,9 @@ module.exports = {
 	|
 	*/
 
-	// svgStroke: {
-	// 	'current': 'currentColor',
-	// },
+	svgStroke: {
+		'current': 'currentColor',
+	},
 
 
 	/*
@@ -822,15 +822,15 @@ module.exports = {
 
 	modules: {
 		appearance: ['responsive'],
-		backgroundAttachment: [],
+		backgroundAttachment: ['responsive', 'hover'],
 		backgroundColors: ['responsive', 'hover'],
-		backgroundPosition: [],
-		backgroundRepeat: [],
-		backgroundSize: [],
-		borderColors: [],
-		borderRadius: [],
-		borderStyle: [],
-		borderWidths: [],
+		backgroundPosition: ['responsive', 'hover'],
+		backgroundRepeat: ['responsive', 'hover'],
+		backgroundSize: ['responsive', 'hover'],
+		borderColors: ['responsive', 'hover'],
+		borderRadius: ['responsive', 'hover'],
+		borderStyle: ['responsive', 'hover'],
+		borderWidths: ['responsive', 'hover'],
 		cursor: ['responsive'],
 		display: ['responsive'],
 		flexbox: ['responsive'],
@@ -846,26 +846,26 @@ module.exports = {
 		minHeight: ['responsive'],
 		minWidth: ['responsive'],
 		negativeMargin: ['responsive'],
-		opacity: [],
+		opacity: ['responsive', 'hover'],
 		overflow: ['responsive'],
 		padding: ['responsive'],
 		pointerEvents: ['responsive'],
 		position: ['responsive'],
-		resize: ['responsive'],
-		shadows: ['responsive'],
-		svgFill: [],
-		svgStroke: [],
+		resize: ['responsive', 'hover'],
+		shadows: ['responsive', 'hover'],
+		svgFill: ['responsive', 'hover'],
+		svgStroke: ['responsive', 'hover'],
 		textAlign: ['responsive'],
 		textColors: ['responsive', 'hover'],
 		textSizes: ['responsive'],
 		textStyle: ['responsive', 'hover'],
-		tracking: [],
-		userSelect: [],
-		verticalAlign: [],
-		visibility: ['responsive'],
-		whitespace: [],
-		width: ['responsive'],
-		zIndex: ['responsive'],
+		tracking: ['responsive', 'hover'],
+		userSelect: ['responsive', 'hover'],
+		verticalAlign: ['responsive', 'hover'],
+		visibility: ['responsive', 'hover'],
+		whitespace: ['responsive', 'hover'],
+		width: ['responsive', 'hover'],
+		zIndex: ['responsive', 'hover'],
 	},
 
 
