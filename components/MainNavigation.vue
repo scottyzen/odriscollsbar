@@ -108,7 +108,7 @@ export default {
 .nav
     width: 100%
     +modifier('style')
-        background: $dark
+        background: $dark-gradient
         background-size: cover
 
 .logo

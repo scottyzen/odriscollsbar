@@ -360,7 +360,7 @@ export default {
         margin-top: -25rem
 
 .bottom-footer
-    background-color: #17263B
+    background: $darkest
     padding-top: 15px
     margin-top: -15px
     position: relative
