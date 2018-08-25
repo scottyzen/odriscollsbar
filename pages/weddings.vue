@@ -18,32 +18,32 @@
             </div>
             <div class="flex flex-wrap mt-16">
                 <div class="w-full">
-                    <ul class="list-reset flex flex-wrap">
+                    <ul class="list-reset flex flex-wrap ">
 
                         <li class="w-1/2 mb-4 lg:w-1/4">
-                            <div class="m-2 p-3 h-full bg-white text-center rounded shadow">
-                                <img class="w-12" src="~/assets/images/icons/champagne.svg">
+                            <div class="m-2 p-3 pb-0 h-full bg-white text-center rounded shadow">
+                                <img class="w-12 pt-3" src="~/assets/images/icons/champagne.svg">
                                 <p class="m-0">Champagne on arrival</p>
                             </div>
                         </li>
         
                         <li class="w-1/2 mb-4 lg:w-1/4">
-                            <div class="m-2 p-3 h-full bg-white text-center rounded shadow">
-                                <img class="w-12" src="~/assets/images/icons/bbq.svg">
+                            <div class="m-2 p-3 pb-0 h-full bg-white text-center rounded shadow">
+                                <img class="w-12 pt-3" src="~/assets/images/icons/bbq.svg">
                                 <p class="m-0">BBQ’s & Buffet style food</p>
                             </div>
                         </li>
 
                         <li class="w-1/2 mb-4 lg:w-1/4">
-                            <div class="m-2 p-3 h-full bg-white text-center rounded shadow">
-                                <img class="w-12" src="~/assets/images/icons/wine.svg">
+                            <div class="m-2 p-3 pb-0 h-full bg-white text-center rounded shadow">
+                                <img class="w-12 pt-3" src="~/assets/images/icons/wine.svg">
                                 <p class="m-0">Wine corkage</p>
                             </div>
                         </li>
                         
                         <li class="w-1/2 mb-4 lg:w-1/4">
-                            <div class="m-2 p-3 h-full bg-white text-center rounded shadow">
-                                <img class="w-12" src="~/assets/images/icons/parking.svg">
+                            <div class="m-2 p-3 pb-0 h-full bg-white text-center rounded shadow">
+                                <img class="w-12 pt-3" src="~/assets/images/icons/parking.svg">
                                 <p class="m-0">Ample parking</p>
                             </div>
                         </li>
@@ -62,7 +62,7 @@
         </picture>  
     </div><!-- End on Image Divider -->
 
-    <div class="container container--style mb-16">
+    <div class="container container--style">
         <div class="row">
             <div class="testimonials py-16 p-8 sm:p-10 md:p-12 xl:p-16">
                 <h2 class="text-underline mt-4">Testimonials</h2>
@@ -83,10 +83,25 @@
         </div>
     </div><!-- End on Container -->
 
+    <div class="w-full mt-20 video-bg">
+        <div class="container text-center">
+            <iframe class="shadow-lg" id="ytplayer" type="text/html" width="720" height="400" src="https://www.youtube.com/embed/123456789?controls=0&showinfo=0&rel=0">
+            </iframe>
+        </div>
+    </div>
+
   </div>
 </template>
 
 <style lang="sass">
+
+.video-bg
+    +laptop
+        background: url('~/assets/images/video-bg.png') top center no-repeat
+
+iframe
+    max-width: (100% !important)
+    // height: (auto !important)
 
 .image-divider
     margin: -2rem 0
