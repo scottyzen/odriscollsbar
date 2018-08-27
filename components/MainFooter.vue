@@ -50,24 +50,63 @@
             @click="center=m.position"
         />
         </GmapMap>
-        <div class="bottom-footer text-grey-dark">
+        <div class="bottom-footer text-grey text-sm">
             <div class="container">
 
-                <!-- <div>
-                    <div class="quick-links">
-                        <div class="title">Quick Links</div>
+                <div class="flex flex-wrap justify-between my-10">
+
+                    <div class="p-8 w-full md:py-10 md:pr-10 lg:pl-0 lg:flex-1">
+                        <div class="text-base text-orange">Heading</div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nihil non sint quod, ullam cumque blanditiis error est voluptates excepturi, omnis hic pariatur sunt, autem ducimus voluptate. Blanditiis, minima repellat.</p>
+                    </div>
+
+                    <div class="p-8">
+                        <div class="text-base text-orange">Navigation</div>
                         <ul class="list-reset">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Gallery</li>
-                            <li>Wedding</li>
-                            <li>FAQ</li>
+                            <li>
+                                <nuxt-link class="text-grey hover:text-white" to="/" exact>Home</nuxt-link>
+                            </li>
+                            <li>
+                                <nuxt-link class="text-grey hover:text-white" to="/gallery" exact>Gallery</nuxt-link>
+                            </li>
+                            <li>
+                                <nuxt-link class="text-grey hover:text-white" to="/history" exact>History</nuxt-link>
+                            </li>
+                            <li>
+                                <nuxt-link class="text-grey hover:text-white" to="/weddings" exact>Weddings</nuxt-link>
+                            </li>
+                            <li>
+                                <nuxt-link class="text-grey hover:text-white" to="/bookings" exact>Bookings</nuxt-link>
+                            </li>
+                            <li>
+                                <nuxt-link class="text-grey hover:text-white" to="/FAQ" exact>FAQ</nuxt-link>
+                            </li>
                         </ul>
                     </div>
-                </div> -->
+
+                    <div class="p-8">
+                        <div class="text-base text-orange">Community links</div>
+                        <ul class="list-reset">
+                            <li class="hover:text-white">Discover Graig</li>
+                            <li class="hover:text-white">Duiske Abbey</li>
+                            <li class="hover:text-white">another link</li>
+                            <li class="hover:text-white">another link</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-10 pt-8 pr-0 w-48">
+                        <div id="TA_cdsratingsonlynarrow957" class="TA_cdsratingsonlynarrow">
+                            <ul id="tpPgNgD25Wgf" class="TA_links uOjxzt4">
+                                <li id="3gmVxgoj8f" class="fHVoouM5">
+                                    <a target="_blank" href="https://www.tripadvisor.ie/"><img src="https://www.tripadvisor.ie/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- copywright Information -->
-                <div class="copywright text-sm w-full flex justify-between px-6">
+                <div class="copywright text-sm w-full flex justify-between border-t border-grey-darkest p-8 py-3 pt-6 lg:px-0">
                     <p>© O' Driscolls Bar 2018</p>
                     <!-- <p>by Scott Kennedy</p> -->
                 </div>
