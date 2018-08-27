@@ -28,20 +28,11 @@ module.exports = {
 				content: 'Nuxt.js project'
 			}
 		],
-		script: [{
-			src: 'https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=957&amp;locationId=5991734&amp;lang=en_IE&amp;border=false&amp;shadow=false&amp;backgroundColor=gray&amp;display_version=2',
-			async: true
-		}],
 		link: [{
-				rel: 'icon',
-				type: 'image/x-icon',
-				href: '/favicon.ico'
-			}
-			// {
-			// 	rel: 'stylesheet',
-			// 	href: 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700'
-			// }
-		]
+			rel: 'icon',
+			type: 'image/x-icon',
+			href: '/favicon.ico'
+		}]
 	},
 
 	// Customize the progress bar color

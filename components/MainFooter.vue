@@ -84,7 +84,7 @@
                         </ul>
                     </div>
 
-                    <div class="p-8">
+                    <div class="p-8 pr-0">
                         <div class="text-base text-orange">Community links</div>
                         <ul class="list-reset">
                             <li class="hover:text-white">Discover Graig</li>
@@ -94,14 +94,8 @@
                         </ul>
                     </div>
 
-                    <div class="p-10 pt-8 pr-0 w-48">
-                        <div id="TA_cdsratingsonlynarrow957" class="TA_cdsratingsonlynarrow">
-                            <ul id="tpPgNgD25Wgf" class="TA_links uOjxzt4">
-                                <li id="3gmVxgoj8f" class="fHVoouM5">
-                                    <a target="_blank" href="https://www.tripadvisor.ie/"><img src="https://www.tripadvisor.ie/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor"/></a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="p-10 pt-8 pr-0 w-1/3 lg:w-1/5">
+                        <img src="~/assets/images/tripadvisor.png" alt="">
                     </div>
                 </div>
 
