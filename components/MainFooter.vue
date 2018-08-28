@@ -55,7 +55,7 @@
 
                 <div class="flex flex-wrap justify-between my-10">
 
-                    <div class="p-8 w-full md:py-10 md:pr-10 lg:pl-0 lg:flex-1">
+                    <div class="p-8 w-full md:py-8 md:pr-10 lg:pl-0 lg:flex-1">
                         <div class="text-base text-orange">Heading</div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nihil non sint quod, ullam cumque blanditiis error est voluptates excepturi, omnis hic pariatur sunt, autem ducimus voluptate. Blanditiis, minima repellat.</p>
                     </div>
