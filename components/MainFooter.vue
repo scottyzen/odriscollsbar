@@ -51,16 +51,15 @@
         />
         </GmapMap>
         <div class="bottom-footer text-grey text-sm">
-            <div class="container">
+            <div class="container pt-6 px-4 md:px-0">
+                <div class="flex flex-wrap justify-between">
 
-                <div class="flex flex-wrap justify-between my-10">
-
-                    <div class="p-8 w-full md:py-8 md:pr-10 lg:pl-0 lg:flex-1">
+                    <div class="w-full mb-6 lg:flex-1 lg:mr-10">
                         <div class="text-base text-orange">Heading</div>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut nihil non sint quod, ullam cumque blanditiis error est voluptates excepturi, omnis hic pariatur sunt, autem ducimus voluptate. Blanditiis, minima repellat.</p>
                     </div>
 
-                    <div class="p-8">
+                    <div class="w-1/3 md:w-1/4 lg:w-32 lg:ml-4">
                         <div class="text-base text-orange">Navigation</div>
                         <ul class="list-reset">
                             <li>
@@ -84,7 +83,7 @@
                         </ul>
                     </div>
 
-                    <div class="p-8 pr-0">
+                    <div class="w-1/3 md:w-1/4 lg:w-32 lg:ml-4">
                         <div class="text-base text-orange">Community links</div>
                         <ul class="list-reset">
                             <li class="hover:text-white">Discover Graig</li>
@@ -94,13 +93,13 @@
                         </ul>
                     </div>
 
-                    <div class="p-10 pt-8 pr-0 w-1/3 lg:w-1/5">
+                    <div class="w-1/3 md:w-1/4 lg:w-32 lg:ml-4">
                         <img src="~/assets/images/tripadvisor.png" alt="">
                     </div>
                 </div>
 
                 <!-- copywright Information -->
-                <div class="copywright text-sm w-full flex justify-between border-t border-grey-darkest p-8 py-3 pt-6 lg:px-0">
+                <div class="copywright mt-10 text-sm w-full flex justify-between border-t border-grey-darkest py-3 pt-6 lg:px-0">
                     <p>© O' Driscolls Bar 2018</p>
                     <!-- <p>by Scott Kennedy</p> -->
                 </div>
