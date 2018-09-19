@@ -17,7 +17,7 @@
                 <br>
                 <p class=" max-w-md m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea rem unde nulla alias magni asperiores, nemo mollitia nostrum! Necessitatibus!</p>
             </div>
-            <gallery id="blueimp-gallery" :images="images" :index="index" @close="index = null"></gallery>
+            <gallery :images="images" :index="index" @close="index = null"></gallery>
 
             <!-- Gallery options -->
             <div class="flex flex-wrap align-top w-full md:w-1/4">
@@ -53,6 +53,7 @@
 
             <div class="flex flex-wrap justify-between w-full md:w-3/4">
                 <div
+                id="blueimp-gallery"
                 class="image mb-6 shadow"
                 v-for="(image, imageIndex) in images"
                 :key="imageIndex"
