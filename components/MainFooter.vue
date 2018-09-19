@@ -397,4 +397,6 @@ export default {
     margin-top: -15px
     position: relative
     z-index: 2
+.copyright
+    border-color: transparentize($yellow, 0.5)
 </style>
