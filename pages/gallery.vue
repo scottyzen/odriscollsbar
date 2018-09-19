@@ -17,7 +17,7 @@
                 <br>
                 <p class=" max-w-md m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea rem unde nulla alias magni asperiores, nemo mollitia nostrum! Necessitatibus!</p>
             </div>
-            <gallery :images="images" :index="index" @close="index = null"></gallery>
+            <gallery id="blueimp-gallery" :images="images" :index="index" @close="index = null"></gallery>
 
             <!-- Gallery options -->
             <div class="flex flex-wrap align-top w-full md:w-1/4">
@@ -104,14 +104,17 @@ export default {
             'https://scontent.fdub2-1.fna.fbcdn.net/v/t1.0-9/34469333_1720067894753169_6176279421096296448_n.jpg?_nc_cat=0&oh=18d096c9f0ea7001fd5c508095a16f66&oe=5C0297DB',
             'https://scontent.fdub2-1.fna.fbcdn.net/v/t31.0-8/28514670_1625533234206636_8335570396976788223_o.jpg?_nc_cat=0&oh=94e1b267810330dbdf21a58a86149848&oe=5BFE1935',
             {
-                title: 'Large dummy image',
-                href: 'https://dummyimage.com/1600/ffffff/000000',
+                title: 'Candle',
+                href: '~/assets/images/candle-large.jpg',
                 type: 'image/jpeg',
-                // thumbnail: 'https://example.org/thumbnails/banana.jpg'
+                thumbnail: '~/assets/images/candle.jpg'
             }
         ],
         index: null,
-        thumbnailView: true
+        thumbnailView: true,
+        options: {
+            container: '#blueimp-gallery',
+        }
       };
     }
 }

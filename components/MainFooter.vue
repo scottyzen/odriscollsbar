@@ -98,8 +98,8 @@
                     </div>
                 </div>
 
-                <!-- copywright Information -->
-                <div class="copywright mt-10 text-sm w-full flex justify-between border-t border-grey-darkest py-3 pt-6 lg:px-0">
+                <!-- copyright Information -->
+                <div class="copyright mt-10 text-sm w-full flex justify-between border-t border-grey-darkest py-3 pt-6 lg:px-0">
                     <p>© O' Driscolls Bar 2018</p>
                     <!-- <p>by Scott Kennedy</p> -->
                 </div>
@@ -398,5 +398,5 @@ export default {
     position: relative
     z-index: 2
 .copyright
-    border-color: transparentize($yellow, 0.5)
+    border-color: transparentize($white, 0.9)
 </style>
