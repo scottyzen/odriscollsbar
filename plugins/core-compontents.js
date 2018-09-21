@@ -1,4 +1,4 @@
-import LazyImage from "@/components/LazyImage";
+import LazyImage from '@/components/LazyImage';
 import MainFooter from '@/components/MainFooter';
 import MainNavigation from '@/components/MainNavigation';
 import Vue from 'vue';
