@@ -16,7 +16,7 @@
 		"ajv": "^6.5.2",
 		"hamburgers": "^0.9.3",
 		"node-sass": "^4.9.3",
-		"nuxt": "^1.4.2",
+		"nuxt": "^2.0.0",
 		"nuxt-sass-resources-loader": "^2.0.2",
 		"vue-gallery": "^1.4.0",
 		"vue2-datepicker": "^2.4.0",
