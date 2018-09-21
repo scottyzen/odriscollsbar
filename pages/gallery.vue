@@ -106,18 +106,9 @@ export default {
             'https://scontent.fdub2-1.fna.fbcdn.net/v/t1.0-9/34535880_1721656654594293_7691902311030849536_n.jpg?_nc_cat=0&oh=bbf1938d9d60a8e26c4f7bca05e48d0c&oe=5C0C01D6',
             'https://scontent.fdub2-1.fna.fbcdn.net/v/t1.0-9/34469333_1720067894753169_6176279421096296448_n.jpg?_nc_cat=0&oh=18d096c9f0ea7001fd5c508095a16f66&oe=5C0297DB',
             'https://scontent.fdub2-1.fna.fbcdn.net/v/t31.0-8/28514670_1625533234206636_8335570396976788223_o.jpg?_nc_cat=0&oh=94e1b267810330dbdf21a58a86149848&oe=5BFE1935',
-            {
-                title: 'Candle',
-                href: '~/assets/images/candle-large.jpg',
-                type: 'image/jpeg',
-                thumbnail: '~/assets/images/candle.jpg'
-            }
         ],
         index: null,
-        thumbnailView: true,
-        options: {
-            container: '#blueimp-gallery',
-        }
+        thumbnailView: true
       };
     }
 }
