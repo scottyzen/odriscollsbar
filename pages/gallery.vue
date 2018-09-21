@@ -56,7 +56,8 @@
 
             <div class="flex flex-wrap justify-between w-full md:w-3/4">
                 <div
-                class="image mb-6 shadow"
+                id="blueimp-gallery"
+                class="image mb-6 shadow blueimp-gallery"
                 v-for="(image, imageIndex) in images"
                 :key="imageIndex"
                 @click="index = imageIndex"
