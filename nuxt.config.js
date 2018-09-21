@@ -32,6 +32,16 @@ module.exports = {
 			rel: 'icon',
 			type: 'image/x-icon',
 			href: '/favicon.ico'
+		}],
+		script: [{
+			type: 'text/javascript',
+			src: 'https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-helper.js'
+		}, {
+			type: 'text/javascript',
+			src: 'https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery.js'
+		}, {
+			type: 'text/javascript',
+			src: 'https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery-fullscreen.js'
 		}]
 	},
 
