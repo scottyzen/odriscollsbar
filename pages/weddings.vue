@@ -97,7 +97,7 @@
 
 .video-bg
     +laptop
-        background: url('~/assets/images/video-bg.png') top center no-repeat
+        background: url('~assets/images/video-bg.png') top center no-repeat
 
 iframe
     max-width: (100% !important)
@@ -121,7 +121,7 @@ iframe
         text-align: left
 
     +element('list-item')
-        background: url('~/assets/images/quote.png') no-repeat
+        background: url('~assets/images/quote.png') no-repeat
         padding: 1rem
         +tablet
             padding: 5rem

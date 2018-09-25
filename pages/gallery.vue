@@ -81,8 +81,8 @@
   </div>
 </template>
 <script>
-import galleryImages from "~/assets/js/gallery-images.js";
-import VueGallery from 'vue-gallery';
+import galleryImages from '~/assets/js/gallery-images.js';
+
 export default {
     data () {
       return {
@@ -90,10 +90,7 @@ export default {
         index: null,
         thumbnailView: true
       };
-    },
-    components: {
-      'gallery': VueGallery
-    },
+    }
 }
 </script>
 <style lang="sass">

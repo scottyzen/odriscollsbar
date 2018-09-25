@@ -32,16 +32,6 @@ module.exports = {
 			rel: 'icon',
 			type: 'image/x-icon',
 			href: '/favicon.ico'
-		}],
-		script: [{
-			type: 'text/javascript',
-			src: 'https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-helper.js'
-		}, {
-			type: 'text/javascript',
-			src: 'https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery.js'
-		}, {
-			type: 'text/javascript',
-			src: 'https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery-fullscreen.js'
 		}]
 	},
 
@@ -50,7 +40,6 @@ module.exports = {
 		color: '#D4956B',
 		height: '4px'
 	},
-
 
 	// Plugins
 	plugins: [
@@ -84,24 +73,24 @@ module.exports = {
 		extend(config, {
 			isDev
 		}) {
-			if (!isDev) {
-				config.plugins.push(
-					new PurgecssPlugin({
-						// purgecss configuration
-						// https://github.com/FullHuman/purgecss
-						paths: glob.sync([
-							path.join(__dirname, './pages/**/*.vue'),
-							path.join(__dirname, './layouts/**/*.vue'),
-							path.join(__dirname, './components/**/*.vue')
-						]),
-						extractors: [{
-							extractor: TailwindExtractor,
-							extensions: ['vue']
-						}],
-						whitelist: ['html', 'body', 'nuxt-progress', 'map', 'vue-map', 'vue-map-container', 'vue-map-hidden']
-					})
-				)
-			}
+			// if (!isDev) {
+			// 	config.plugins.push(
+			// 		new PurgecssPlugin({
+			// 			// purgecss configuration
+			// 			// https://github.com/FullHuman/purgecss
+			// 			paths: glob.sync([
+			// 				path.join(__dirname, './pages/**/*.vue'),
+			// 				path.join(__dirname, './layouts/**/*.vue'),
+			// 				path.join(__dirname, './components/**/*.vue')
+			// 			]),
+			// 			extractors: [{
+			// 				extractor: TailwindExtractor,
+			// 				extensions: ['vue']
+			// 			}],
+			// 			whitelist: ['html', 'body', 'nuxt-progress', 'map', 'vue-map', 'vue-map-container', 'vue-map-hidden', 'vue-gallery', 'blueimp', 'blueimp-gallery']
+			// 		})
+			// 	)
+			// }
 		}
 	},
 	// Global css
@@ -109,5 +98,5 @@ module.exports = {
 		'@/assets/css/app.css',
 		'@/assets/css/modular.css'
 	],
-	vendor: ['vue2-google-maps']
+	vendor: ['vue2-google-maps', 'vue-gallery']
 }
