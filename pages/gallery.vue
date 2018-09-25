@@ -17,7 +17,7 @@
                 <br>
                 <p class=" max-w-md m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea rem unde nulla alias magni asperiores, nemo mollitia nostrum! Necessitatibus!</p>
             </div>
-            <gallery :images="images" :index="index" @close="index = null">
+            <gallery :images="images" :index="index" @close="index = null" class="blueimp-gallery blueimp-gallery-controls" id="blueimp-gallery">
 
                 
             </gallery>
@@ -28,7 +28,7 @@
                     <div class="type w-full">
                         <p class="font-bold text-xs text-orange uppercase">View mode</p>
                         <p class="m-0">
-                            <a @click="thumbnailView = false" :class="{'font-bold' : !thumbnailView}">Full images</a>
+                            <a @click="thumbnailView = false" :class="{'font-bold' : !thumbnailView}">Large</a>
                         </p>
                         <p class="m-0">
                             <a @click="thumbnailView = true" :class="{'font-bold' : thumbnailView}">Thumbnails</a>
