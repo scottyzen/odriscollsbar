@@ -28,7 +28,7 @@
                     <div class="type w-full">
                         <p class="font-bold text-xs text-orange uppercase">View mode</p>
                         <p class="m-0">
-                            <a @click="thumbnailView = false" :class="{'font-bold' : !thumbnailView}">Large</a>
+                            <a @click="thumbnailView = false" :class="{'font-bold' : !thumbnailView}">Larger</a>
                         </p>
                         <p class="m-0">
                             <a @click="thumbnailView = true" :class="{'font-bold' : thumbnailView}">Thumbnails</a>

@@ -8,6 +8,16 @@ class TailwindExtractor {
 	}
 }
 
+function collectWhitelist() {
+	// do something to collect the whitelist
+	return ['html', 'body', 'nuxt-progress', 'map', 'vue-map', 'vue-map-container', 'vue-map-hidden', 'next', 'prev', 'slides', 'blueimp-gallery-carousel'];
+}
+
+function collectWhitelistPatterns() {
+	// do something to collect the whitelist
+	return [/^blueimp-gallery/, /^blueimp-gallery-display/, /^blueimp-gallery-controls/];
+}
+
 module.exports = {
 	// Server side rendering turned on
 	mode: 'universal',
@@ -87,7 +97,8 @@ module.exports = {
 							extractor: TailwindExtractor,
 							extensions: ['vue']
 						}],
-						whitelist: ['html', 'body', 'nuxt-progress', 'map', 'vue-map', 'vue-map-container', 'vue-map-hidden', 'vue-gallery', 'blueimp-gallery-controls', 'blueimp-gallery']
+						whitelist: collectWhitelist,
+						whitelistPatterns: collectWhitelistPatterns
 					})
 				)
 			}
