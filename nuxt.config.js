@@ -10,12 +10,12 @@ class TailwindExtractor {
 
 function collectWhitelist() {
 	// do something to collect the whitelist
-	return ['html', 'body', 'nuxt-progress', 'map', 'vue-map', 'vue-map-container', 'vue-map-hidden', 'next', 'prev', 'slides', 'blueimp-gallery-carousel'];
+	return ['html', 'body', 'nuxt-progress', 'map', 'vue-map', 'vue-map-container', 'vue-map-hidden', 'next', 'prev', 'slides', 'blueimp-gallery-carousel', 'slides', 'slide'];
 }
 
 function collectWhitelistPatterns() {
 	// do something to collect the whitelist
-	return [/^blueimp-gallery/, /^blueimp-gallery-display/, /^blueimp-gallery-controls/];
+	return [/^gallery/, /^blueimp-gallery/, /^blueimp-gallery-display/, /^blueimp-gallery-controls/];
 }
 
 module.exports = {
