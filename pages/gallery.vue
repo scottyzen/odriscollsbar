@@ -10,9 +10,9 @@
     </div>
 
     <!-- Gallery -->
-    <div class="container container--style container--bottom-gap p-10 md:p-12">
+    <div class="container container--style container--bottom-gap p-8 md:p-12">
         <div class="row flex flex-wrap">
-            <div class="text-center w-full mb-8 lg:mb-16">
+            <div class="text-center w-full mb-12 lg:mb-16">
                 <h2 class="text-underline">Gallery</h2>
                 <br>
                 <p class=" max-w-md m-auto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis ea rem unde nulla alias magni asperiores, nemo mollitia nostrum! Necessitatibus!</p>
@@ -23,35 +23,27 @@
             </gallery>
 
             <!-- Gallery options -->
-            <div class="flex flex-wrap align-top w-full md:w-1/4">
-                <div class="text-grey-dark">
-                    <div class="type w-full">
-                        <p class="font-bold text-xs text-orange uppercase">View mode</p>
-                        <p class="m-0">
-                            <a @click="thumbnailView = false" :class="{'font-bold' : !thumbnailView}">Full</a>
-                        </p>
-                        <p class="m-0">
-                            <a @click="thumbnailView = true" :class="{'font-bold' : thumbnailView}">Grid</a>
-                        </p>
-                        
-                        
-                    </div>
-                    <br>
-                    <div class="type w-full">
-                        <p class="font-bold text-xs text-orange uppercase">Type</p>
-                        <p class="m-0">Popular</p>
-                        <p class="m-0">Recent</p>
-                        <p class="m-0">Videos</p>
-                    </div>
-                    <br>
-                    <div class="type w-full">
-                        <p class="font-bold text-xs text-orange uppercase">Tags</p>
-                        <p class="m-0">BBQ</p>
-                        <p class="m-0">Funny</p>
-                        <p class="m-0">Music</p>
-                        <p class="m-0">Weddings</p>
-                    </div>
+            <div class="flex flex-wrap md:flex-col align-top w-full md:w-1/4 text-grey-dark mb-6">
+
+                <!-- VIEW -->
+                <div class="type mr-8 md:mb-6">
+                    <p class="font-bold text-xs text-orange uppercase mb-0">View</p>
+                    <ul class="flex md:flex-col list-reset">
+                        <li class="m-0 mr-2"><a @click="thumbnailView = false" :class="{'font-bold' : !thumbnailView}">Full</a></li>
+                        <li class="m-0 mr-2"><a @click="thumbnailView = true" :class="{'font-bold' : thumbnailView}">Grid</a></li>
+                    </ul>
                 </div>
+
+                <!-- TYPE -->
+                <div class="type md:mb-6">
+                    <p class="font-bold text-xs text-orange uppercase mb-0">Type</p>
+                    <ul class="flex md:flex-col list-reset">
+                        <li class="m-0 mr-2 font-bold">All</li>
+                        <li class="m-0 mr-2">Pictures</li>
+                        <li class="m-0 mr-2">Videos</li>
+                    </ul>
+                </div>
+
             </div>
 
             <div class="flex flex-wrap justify-between w-full md:w-3/4">
@@ -110,8 +102,7 @@ export default {
 
 .thumbnailView
     min-height: 150px
-    +tablet
-        width: 47.5%
+    width: 47.5%
     +laptop
         width: 30%
 
@@ -119,10 +110,5 @@ export default {
     .title
         background: black
     .close
-        margin: 0
         padding: 20px
-        color: $yellow
-    .slide-content
-        max-width: 80%
-        max-height: 80%
 </style>

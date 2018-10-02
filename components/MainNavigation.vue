@@ -129,6 +129,7 @@ export default {
         
     .hamburger
         padding: (5px 0 !important)
+        opacity: 1
         .hamburger-inner[data-v-42076448]
             &, &::before, &::after
                 background-color: $yellow
