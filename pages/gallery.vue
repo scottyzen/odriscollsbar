@@ -111,4 +111,6 @@ export default {
         background: black
     .close
         padding: 20px
+    .slide-content
+        margin: auto
 </style>
