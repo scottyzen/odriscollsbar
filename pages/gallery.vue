@@ -33,8 +33,8 @@
         <!-- Gallery options -->
         <div class="flex flex-wrap md:flex-col align-top w-full md:w-1/4 text-grey-dark mb-6">
           <!-- VIEW -->
-          <div class="type mr-8 md:mb-10">
-            <p class="font-bold text-sm text-orange uppercase mb-2">View</p>
+          <div class="type mr-8 mb-4 md:mb-10">
+            <p class="font-bold text-sm text-orange uppercase mb-1 md:mb-2">View</p>
             <ul class="flex md:flex-col list-reset">
               <li class="m-0 mb-1 mr-3">
                 <a
@@ -52,8 +52,8 @@
           </div>
 
           <!-- Albums -->
-          <div class="type mr-8 md:mb-10">
-            <p class="font-bold text-sm text-orange uppercase mb-2">Albums</p>
+          <div class="album mr-8 md:mb-10">
+            <p class="font-bold text-sm text-orange uppercase mb-1 md:mb-2">Albums</p>
             <ul class="flex md:flex-col list-reset">
               <li class="m-0 mb-1 mr-3">
                 <a
