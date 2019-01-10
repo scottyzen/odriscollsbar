@@ -112,7 +112,7 @@ export default {
       .get("https://api.imgur.com/3/account/scottyzen/albums/", config)
       .then(res => {
         var albums = res.data.data;
-        console.log(albums);
+        // console.log(albums);
 
         this.albums = albums;
 
