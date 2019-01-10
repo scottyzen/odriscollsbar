@@ -1,106 +1,109 @@
 <template>
-    <nav class="nav nav--style relative shadow-lg">
-        <div class="flex container">
+  <nav class="nav nav--style relative shadow-lg">
+    <div class="flex container">
+      <!-- Logo -->
+      <div class="logo self-center">
+        <nuxt-link to="/">
+          <img src="~/assets/images/logo.png" width="160">
+        </nuxt-link>
+      </div>
 
-            <!-- Logo -->
-            <div class="logo self-center">
-                <nuxt-link  to="/">
-                    <img src="~/assets/images/logo.png" width="160">
-                </nuxt-link>
-            </div>
+      <!-- Burger -->
+      <div id="burger">
+        <a @click="toggleNav()">
+          <button
+            class="hamburger hamburger--collapse"
+            :class="{ 'is-active': showNav }"
+            type="button"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </a>
+      </div>
 
-            <!-- Burger -->
-            <div id="burger">
-                <a @click="toggleNav()">
-                    <button class="hamburger hamburger--collapse" :class="{ 'is-active': showNav }" type="button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
-                </a>
-            </div>
+      <!--  Mobile Navigation List -->
+      <transition name="slide">
+        <ul class="mobile-nav" v-if="showNav">
+          <li class="mobile-nav__item mobile-nav__item--first" @click="toggleNav()">
+            <nuxt-link class="mobile-nav__link pt-16" to="/" exact>Home</nuxt-link>
+          </li>
+          <li class="mobile-nav__item" @click="toggleNav()">
+            <nuxt-link class="mobile-nav__link" to="/gallery">Gallery</nuxt-link>
+          </li>
+          <li class="mobile-nav__item" @click="toggleNav()">
+            <nuxt-link class="mobile-nav__link" to="/weddings" exact>Weddings</nuxt-link>
+          </li>
+          <li class="mobile-nav__item" @click="toggleNav()">
+            <nuxt-link class="mobile-nav__link" to="/faq" exact>FAQ</nuxt-link>
+          </li>
+          <li class="mobile-nav__item" @click="toggleNav()">
+            <nuxt-link class="mobile-nav__link" to="/bookings" exact>Bookings</nuxt-link>
+          </li>
+        </ul>
+      </transition>
 
-            <!--  Mobile Navigation List -->
-            <transition name="slide">
-                <ul class="mobile-nav" v-if="showNav">
-                    <li class="mobile-nav__item mobile-nav__item--first" @click="toggleNav()">
-                        <nuxt-link class="mobile-nav__link pt-16" to="/" exact>Home</nuxt-link>
-                    </li>
-                    <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link class="mobile-nav__link" to="/gallery" >Gallery</nuxt-link>
-                    </li>
-                    <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link class="mobile-nav__link" to="/weddings" exact>Weddings</nuxt-link>
-                    </li>
-                    <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link class="mobile-nav__link" to="/faq" exact>FAQ</nuxt-link>
-                    </li>
-                    <li class="mobile-nav__item" @click="toggleNav()">
-                        <nuxt-link class="mobile-nav__link" to="/bookings" exact>Bookings</nuxt-link>
-                    </li>
-                </ul>
-            </transition>
-
-
-            <!-- Desktop Navigation List -->
-            <ul class="desktop-nav" v-if="screenWidth > 992">
-                <li class="desktop-nav__item desktop-nav__item--first">
-                    <nuxt-link to="/" exact>Home</nuxt-link>
-                </li>
-                <li class="desktop-nav__item">
-                    <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
-                </li>
-                <li class="desktop-nav__item">
-                    <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
-                </li>
-                <li class="desktop-nav__item">
-                    <nuxt-link to="/faq" exact>FAQ</nuxt-link>
-                </li>
-                <li class="desktop-nav__item">
-                    <nuxt-link to="/bookings" exact>Bookings</nuxt-link>
-                </li>
-                <li class="desktop-nav__item desktop-nav__item--last">
-                    <ul class="inline-flex social-icons">
-                        <li class="social-icons__icon">
-                            <img src="~/assets/images/icons/Facebook.svg" alt="facebook logo">
-                        </li>
-                        <li class="social-icons__icon">
-                            <img src="~/assets/images/icons/Instagram.svg" alt="instagram logo">
-                        </li>
-                        <!-- <li class="social-icons__icon">
+      <!-- Desktop Navigation List -->
+      <ul class="desktop-nav" v-if="screenWidth > 992">
+        <li class="desktop-nav__item desktop-nav__item--first">
+          <nuxt-link to="/" exact>Home</nuxt-link>
+        </li>
+        <li class="desktop-nav__item">
+          <nuxt-link to="/gallery" exact>Gallery</nuxt-link>
+        </li>
+        <li class="desktop-nav__item">
+          <nuxt-link to="/weddings" exact>Weddings</nuxt-link>
+        </li>
+        <li class="desktop-nav__item">
+          <nuxt-link to="/faq" exact>FAQ</nuxt-link>
+        </li>
+        <li class="desktop-nav__item">
+          <nuxt-link to="/bookings" exact>Bookings</nuxt-link>
+        </li>
+        <li class="desktop-nav__item desktop-nav__item--last">
+          <ul class="inline-flex social-icons">
+            <li class="social-icons__icon">
+              <a href="https://www.facebook.com/ODriscollsBarBeerGarden" target="_blank">
+                <img src="~/assets/images/icons/Facebook.svg" alt="facebook logo">
+              </a>
+            </li>
+            <li class="social-icons__icon">
+              <img src="~/assets/images/icons/Instagram.svg" alt="instagram logo">
+            </li>
+            <!-- <li class="social-icons__icon">
                             <img src="~/assets/images/icons/Twitter.svg" alt="">
-                        </li> -->
-                    </ul>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
+            </li>-->
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
 export default {
-    data(){
-        return{
-            showNav: false,
-            screenWidth: ''
-        }
-    },
-    methods:{
-        toggleNav(){
-                this.showNav = !this.showNav;
-        }
-    },
-    mounted() {
-        this.screenWidth = window.innerWidth;
-        window.addEventListener('resize',  () => {
-            this.screenWidth = window.innerWidth;
-            if (this.screenWidth > 992) {
-                this.showNav = false;
-            }
-        });
+  data() {
+    return {
+      showNav: false,
+      screenWidth: ""
+    };
+  },
+  methods: {
+    toggleNav() {
+      this.showNav = !this.showNav;
     }
-}
+  },
+  mounted() {
+    this.screenWidth = window.innerWidth;
+    window.addEventListener("resize", () => {
+      this.screenWidth = window.innerWidth;
+      if (this.screenWidth > 992) {
+        this.showNav = false;
+      }
+    });
+  }
+};
 </script>
 
 
@@ -153,6 +156,8 @@ export default {
         a 
             color: $light
             padding-bottom: 2.5rem
+            &:hover
+                color: $yellow                
         .nuxt-link-active
             color: $yellow
             border-bottom: 2px solid $yellow

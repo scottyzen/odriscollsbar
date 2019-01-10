@@ -72,10 +72,9 @@
         </div>
 
         <transition-group
-          enter-active-class="fadeIn"
-          leave-active-class="fadeOut"
+          name="zoom"
           class="flex flex-wrap justify-between w-full md:w-3/4"
-          mode="out-in"
+          mode="in-out"
         >
           <div
             v-show="selectedFolder == image.belongTo || selectedFolder == 'all'"
@@ -93,13 +92,15 @@
     </div>
   </div>
 </template>
+
 <script>
-const axios = require("axios");
 require("vue2-animate/dist/vue2-animate.min.css");
+
+const axios = require("axios");
+
+// Imgur auth2
 const config = {
-  headers: {
-    Authorization: "Bearer e9ed442f33622928db91a53253fdf1e7e8db7ff2"
-  }
+  headers: { Authorization: "Bearer e9ed442f33622928db91a53253fdf1e7e8db7ff2" }
 };
 
 export default {
@@ -118,8 +119,6 @@ export default {
       .get("https://api.imgur.com/3/account/scottyzen/albums/", config)
       .then(res => {
         var albums = res.data.data;
-        // console.log(albums);
-
         this.albums = albums;
 
         albums.forEach(album => {
@@ -127,8 +126,6 @@ export default {
           axios
             .get("https://api.imgur.com/3/album/" + album.id, config)
             .then(res => {
-              console.log(res.data.data.images);
-
               res.data.data.images.forEach(img => {
                 this.images.push({
                   href: img.link,
@@ -160,6 +157,7 @@ export default {
 
 .thumbnailView
     min-height: 150px
+    max-height: 150px
     width: 47.5%
     +laptop
         width: 30%
