@@ -71,25 +71,31 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap justify-between w-full md:w-3/4">
+        <transition-group
+          enter-active-class="fadeIn"
+          leave-active-class="fadeOut"
+          class="flex flex-wrap justify-between w-full md:w-3/4"
+          mode="out-in"
+        >
           <div
             v-show="selectedFolder == image.belongTo || selectedFolder == 'all'"
-            class="image mb-6 shadow"
+            class="image mb-6 shadow w-full"
             v-for="(image, imageIndex) in images"
-            :key="imageIndex"
+            :key="image"
             @click="index = imageIndex"
             :style="{ backgroundImage: 'url(' + image.href + ')' }"
             :class="{'thumbnailView': thumbnailView}"
           >
             <span class="text-hidden">{{image.title}}</span>
           </div>
-        </div>
+        </transition-group>
       </div>
     </div>
   </div>
 </template>
 <script>
 const axios = require("axios");
+require("vue2-animate/dist/vue2-animate.min.css");
 const config = {
   headers: {
     Authorization: "Bearer e9ed442f33622928db91a53253fdf1e7e8db7ff2"
@@ -121,6 +127,8 @@ export default {
           axios
             .get("https://api.imgur.com/3/album/" + album.id, config)
             .then(res => {
+              console.log(res.data.data.images);
+
               res.data.data.images.forEach(img => {
                 this.images.push({
                   href: img.link,
@@ -165,5 +173,4 @@ export default {
 
 svg 
     margin-right: 5px
-
 </style>
