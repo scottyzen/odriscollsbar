@@ -105,7 +105,7 @@
         <div
           class="copyright mt-10 text-sm w-full flex justify-between border-t border-grey-darkest py-3 pt-6 lg:px-0"
         >
-          <p>© O' Driscolls Bar 2018</p>
+          <p>© O' Driscolls Bar 2019</p>
           <!-- <p>by Scott Kennedy</p> -->
         </div>
       </div>
@@ -128,6 +128,7 @@
     </div>
   </footer>
 </template>
+
 <script>
 export default {
   data() {
