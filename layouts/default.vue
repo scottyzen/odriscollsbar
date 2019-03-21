@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <main-navigation/>
-        <nuxt/>
-        <main-footer/>
-    </div>
+  <div id="top">
+    <main-navigation/>
+    <nuxt/>
+    <main-footer/>
+  </div>
 </template>
 
 
@@ -15,6 +15,7 @@ html
 	-moz-osx-font-smoothing: grayscale
 	-webkit-font-smoothing: antialiased
 	box-sizing: border-box
+    scroll-behavior: smooth
  
 *, *:before, *:after, *:focus
 	box-sizing: border-box
@@ -33,10 +34,10 @@ html
         max-width: calc(#{$tablet-width} - 2%)
     
     +laptop 
-        max-width: calc(#{$laptop-width} - 4rem)
+        max-width: calc(#{$laptop-width} - 1rem)
     
     +desktop 
-        max-width: calc(#{$desktop-width} - 10%)
+        max-width: calc(#{$desktop-width} - 2rem)
     
     +ultra-wide 
         max-width: 1200px

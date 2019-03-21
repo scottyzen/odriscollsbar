@@ -32,6 +32,7 @@
         </div>
       </div>
     </div>
+
     <GmapMap
       class="map"
       :center="map.position"
@@ -110,7 +111,7 @@
         </div>
       </div>
       <!-- Back to top button -->
-      <a href="#" class="back-to-top">
+      <a href="#top" class="back-to-top">
         <svg
           width="28px"
           viewBox="0 0 20 20"
