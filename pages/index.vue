@@ -118,8 +118,60 @@
         </div>
       </div>
     </div>
+
+    <div class="mt-32">
+      <div class="container">
+        <ul class="flex flex-wrap list-reset">
+          <li
+            v-for="(image, index) in odriscollsInstagram"
+            :key="index"
+            class="w-1/2 h-48 md:w-1/3 md:h-64 lg:w-1/4"
+          >
+            <a
+              :href="'https://www.instagram.com/p/' + image.id"
+              target="_blank"
+              :style="{ 'background-image': 'url(' + image.url + ')' }"
+              class="insta-a"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+import axios from "axios";
+
+export default {
+  data() {
+    return {
+      odriscollsInstagram: [],
+      hashtag: "odriscollsbar",
+      numberOfImagesToDisplay: 8
+    };
+  },
+  mounted() {
+    axios
+      .get("https://www.instagram.com/explore/tags/" + this.hashtag + "/?__a=1")
+      .then(response => {
+        const images =
+          response.data.graphql.hashtag.edge_hashtag_to_media.edges;
+        for (let i = 0; i < images.length; i++) {
+          const img = images[i];
+          if (i < this.numberOfImagesToDisplay) {
+            var newObj = {
+              url: img.node.display_url,
+              id: img.node.shortcode
+            };
+            this.odriscollsInstagram.push(newObj);
+          }
+        }
+      });
+  }
+};
+</script>
+
 
 <style lang="sass">
 
@@ -129,7 +181,7 @@
         padding: 1rem 0
         // color: lighten($dark, 50%)
     +element('title')
-        color: darken($white, 10%)
+        color: $white
         font-family: $heading-font
         font-weight: 600
         font-size: 1.5rem
@@ -149,5 +201,12 @@
     margin-bottom: -5px
     margin-right: 10px
 
+.insta-a
+    width: 100%
+    height: 100%
+    display: block
+    overflow: hidden
+    background-size: cover
+    background-position: center
 </style>
 
