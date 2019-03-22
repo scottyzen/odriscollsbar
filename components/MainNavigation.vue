@@ -147,6 +147,7 @@ export default {
     flex: 1
     justify-content: flex-end
     font-weight: 700
+    font-size: .875rem
 
     // Element
     +element('item')
