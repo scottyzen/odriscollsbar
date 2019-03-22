@@ -20,11 +20,11 @@
         >Ballyduff House, as well as hosting weddings, is also the perfect settings for private parties, events, conferences, and social gatherings of any kind. Depending on the season, the use of the House together with the extensive and beautifully kept grounds and walled garden can make for a highly successful and memorable social engagement. Marquees, catering, floral display and transport to suit your needs for any occasion can be provided by prior arrangement.</p>
       </div>
 
-      <div class="row flex flex-wrap py-16 items-center">
-        <div class="w-full mb-10 lg:mb-0 lg:w-1/2 lg:pr-8">
+      <div class="row flex flex-wrap py-24">
+        <div class="w-full lg:mb-0 lg:w-1/2 lg:pr-8">
           <img class="image--style" src="~/assets/images/hobys-party.jpg" alt>
         </div>
-        <div class="w-full lg:w-1/2 lg:pl-8">
+        <div class="w-full lg:w-1/2 lg:pl-8 mt-12">
           <p class="title">Parties and Events</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus animi quod voluptas temporibus debitis est accusamus similique corrupti.</p>
 
@@ -35,8 +35,8 @@
         </div>
       </div>
 
-      <div class="row flex flex-wrap flex-col-reverse lg:flex-row py-16 items-center">
-        <div class="w-full lg:w-1/2 lg:pr-8">
+      <div class="row flex flex-wrap flex-col-reverse lg:flex-row py-24">
+        <div class="w-full lg:w-1/2 lg:pr-8 mt-12">
           <p class="title">Weddings</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus animi quod voluptas temporibus debitis est accusamus similique corrupti! Fuga deleniti cum alias et eos recusandae perferendis odio vitae dicta a ad, voluptatibus officia voluptatum praesentium, aliquid id. Nemo minima accusamus sint, illum doloribus aliquam minus voluptatem harum, nisi nulla aspernatur?</p>
 
@@ -45,7 +45,7 @@
             class="inline-block bg-orange hover:bg-orange-dark text-white font-semibold py-2 px-4 rounded"
           >More info</nuxt-link>
         </div>
-        <div class="w-full mb-10 lg:mb-0 lg:w-1/2 lg:pl-8">
+        <div class="w-full lg:mb-0 lg:w-1/2 lg:pl-8">
           <img class="image--style" src="~/assets/images/bike.jpg" alt>
         </div>
       </div>
@@ -97,7 +97,7 @@
             <span class="quick-info__title">Instagram</span>
             <p>
               Tag your photo with
-              <strong class="text-orange">#odriscollsbar</strong> to see them displayed here
+              <strong class="text-orange">#odriscollsbar</strong> to see them displayed below.
             </p>
           </div>
 
@@ -132,6 +132,8 @@
               target="_blank"
               :style="{ 'background-image': 'url(' + image.url + ')' }"
               class="insta-a"
+              :alt="image.description"
+              :title="image.description"
             ></a>
           </li>
         </ul>
@@ -157,12 +159,14 @@ export default {
       .then(response => {
         const images =
           response.data.graphql.hashtag.edge_hashtag_to_media.edges;
+
         for (let i = 0; i < images.length; i++) {
           const img = images[i];
           if (i < this.numberOfImagesToDisplay) {
             var newObj = {
               url: img.node.display_url,
-              id: img.node.shortcode
+              id: img.node.shortcode,
+              description: img.node.edge_media_to_caption.edges[0].node.text
             };
             this.odriscollsInstagram.push(newObj);
           }

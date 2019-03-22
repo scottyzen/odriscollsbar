@@ -50,7 +50,7 @@
       />
     </GmapMap>
     <div class="bottom-footer text-grey-light text-sm">
-      <div class="container pt-6 px-4 md:px-0">
+      <div class="container py-12 px-4 md:px-0">
         <div class="flex flex-wrap justify-between">
           <div class="w-full mb-6 lg:flex-1 lg:mr-10">
             <div class="text-base text-orange">Heading</div>
@@ -101,31 +101,21 @@
             <img src="~/assets/images/tripadvisor.png" alt>
           </div>
         </div>
-
-        <!-- copyright Information -->
-        <div
-          class="copyright mt-10 text-sm w-full flex justify-between border-t border-grey-darkest py-3 pt-6 lg:px-0"
-        >
-          <p>© O' Driscolls Bar 2019</p>
-          <!-- <p>by Scott Kennedy</p> -->
-        </div>
       </div>
-      <!-- Back to top button -->
-      <a href="#top" class="back-to-top">
-        <svg
-          width="28px"
-          viewBox="0 0 20 20"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <g id="Page-1" stroke="none" stroke-width="1" fill="#172639" fill-rule="evenodd">
-            <g id="icon-shape">
-              <polygon id="Combined-Shape" points="7 10 7 18 13 18 13 10 18 10 10 2 2 10 7 10"></polygon>
-            </g>
-          </g>
-        </svg>
-      </a>
+    </div>
+    <!-- copyright Information -->
+    <div class="copyright text-sm w-full pt-4 lg:px-0 text-grey-dark">
+      <div class="container flex justify-between px-4 md:px-0">
+        <p>© O' Driscolls Bar 2019</p>
+        <p>
+          Designed by
+          <a
+            href="http://scottyzen.com"
+            target="_blank"
+            class="font-bold text-grey text-grey-light border-b"
+          >Scott Kennedy</a>
+        </p>
+      </div>
     </div>
   </footer>
 </template>
@@ -421,22 +411,6 @@ export default {
     position: relative
     z-index: 2
 .copyright
-    border-color: transparentize($white, 0.9)
-
-    // absolute pin-b pin-r mb-6 mr-6 bg-white p-4 rounded-full
-.back-to-top
-    position: absolute
-    bottom: 30px
-    right: 30px
-    height: 48px
-    width: 48px
-    background: #fff
-    border-radius: 50%
-    padding: 10px
-    box-shadow: $shadow
-    opacity: 0.95
-    &:hover
-        background: #D49568
-
+    background: darken($darkest, 2%)
 
 </style>
