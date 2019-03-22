@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="logo self-center">
         <nuxt-link to="/">
-          <img src="~/assets/images/logo.png" width="160">
+          <img src="~/assets/images/logo.png" width="150">
         </nuxt-link>
       </div>
 
