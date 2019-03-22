@@ -150,12 +150,12 @@ export default {
 
     // Element
     +element('item')
-        padding: 2.5rem 1.5rem
+        padding: 2rem 1.5rem
         width: auto
         flex-flow: row
         a 
             color: $light
-            padding-bottom: 2.5rem
+            padding-bottom: 2rem
             &:hover
                 color: $yellow                
         .nuxt-link-active

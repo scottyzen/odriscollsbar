@@ -1,5 +1,5 @@
 <template>
-  <div id="top">
+  <div>
     <main-navigation/>
     <nuxt/>
     <main-footer/>
@@ -59,9 +59,9 @@ html
     +mobile
         margin-bottom: -15%
     +tablet
-        margin-bottom: -17.50%
+        margin-bottom: -22.50%
     +desktop
-        margin-bottom: -20%
+        margin-bottom: -25%
     +ultra-wide
-        margin-bottom: -22.5%
+        margin-bottom: -25%
 </style>

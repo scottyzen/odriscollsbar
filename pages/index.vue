@@ -13,10 +13,10 @@
     <div class="container container--style container--bottom-gap p-8 sm:p-10 md:p-12 xl:p-16">
       <div class="row m-auto mt-0 mb-8">
         <div class="text-center">
-          <h2 class="text-underline text-5xl mt-0 mb-12">Welcome</h2>
+          <h2 class="text-underline text-5xl mt-0 mb-12">O' Driscolls Bar & Beer Garden</h2>
         </div>
         <p
-          class="text-lg max-w-lg m-auto mb-8"
+          class="text-lg max-w-lg m-auto mb-16"
         >Ballyduff House, as well as hosting weddings, is also the perfect settings for private parties, events, conferences, and social gatherings of any kind. Depending on the season, the use of the House together with the extensive and beautifully kept grounds and walled garden can make for a highly successful and memorable social engagement. Marquees, catering, floral display and transport to suit your needs for any occasion can be provided by prior arrangement.</p>
       </div>
 
