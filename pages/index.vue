@@ -13,7 +13,7 @@
     <div class="container container--style container--bottom-gap p-8 sm:p-10 md:p-12 xl:p-16">
       <div class="row m-auto mt-0 mb-8">
         <div class="text-center">
-          <h2 class="text-underline text-5xl mt-0 mb-12">O' Driscolls Bar & Beer Garden</h2>
+          <h2 class="text-underline text-5xl mt-10 mb-20">O' Driscolls Bar & Beer Garden</h2>
         </div>
         <p
           class="text-lg max-w-lg m-auto mb-16"

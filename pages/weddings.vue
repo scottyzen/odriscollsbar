@@ -12,7 +12,7 @@
     <div class="container container--style p-8 sm:p-10 md:p-12 xl:p-16">
       <div class="row m-auto mb-8 md:px-12">
         <p class="font-bold text-3xl text-center">Let us make your day even more special</p>
-        <div class="pt-4">
+        <div class="pt-4 max-w-lg mx-auto">
           <p>When you picture a London pub wedding does your imagination immediately take you to The Queen Vic or The Nags Head?! No longer synonymous with the Trotters, Mitchells and Slaters of the TV world, pub weddings are one of the fastest growing trends in the wedding industry. Couples are eschewing the more formal conventions to make their big day a chance to really express who they are as a couple. The flexibility of our venues can see them offer every kind of day imaginable but putting them and their family and friends at the centre of it. With a focus firmly centred on everyone having a great time – pub weddings are the relaxed and informal choice that continues to grow in popularity.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, numquam minus dolorum voluptates porro id nostrum sequi sit blanditiis! Aliquam officiis error distinctio minima perferendis rem consequatur ex ipsa sequi at, quam quisquam, atque pariatur.</p>
         </div>
@@ -66,12 +66,14 @@
           <h2 class="text-underline mt-4">Testimonials</h2>
           <ul class>
             <li class="testimonials__list-item">
-              <p>Hi Niamh,
+              <p>
+                Hi Niamh,
+                <br>
                 <br>I just wanted to write you this email to thank not only yourself and Richard but EVERY single person from Graiguenamangh who helped out or contributed in some way to make Saturday the most amazing day of our lives! We had an idea in our heads of what we wanted our wedding day to be like but we also felt we had to be realistic, clearly ye didn't feel the same! No matter what we wanted the answer was 'yes' and whatever we requested was done/sourced/built within a few days! When we arrived down on Wednesday we couldn't believe the amount of lads there who seemed more than happy to help us do whatever was needed to get the venue ready and those same lads were still there working away on Friday night!
               </p>
-              <p>Thank you to all the BnB's, guest houses, self catering cottages etc for accommodating everyone for the weekend, all our guests were well looked after, especially my cousin Aoife who some how ended up staying with the very kind Dominic! Thank you to Mark in Daisy Chain for sourcing the beloved milk churns and Bridget for providing the milk churns! Thank you to David in Duiske Abbey who was there to help us Wednesday evening, Friday evening and Saturday morning, we even had him downloading songs and burning cd's 'til all hours Friday night! Thank you to Olivia and her team for helping Fergus out with the food, the service was incredible and the food on Sunday certainly cleared the hangovers!</p>
-              <p>Thank you to Scott and Shauna and the rest of the bar staff (the real hero's this weekend!) who made jager bomb after jager bomb and worked til all hours without complaining! Thank you the very patient taxi drivers for getting everyone home safe Saturday night. Thank you to Johnny and Eddie for providing the entertainment on Sunday and Damo for leading 'rock the boat' and starting the sing song and lastly thank you to the chairman of the GAA club for the hurls!</p>
-              <p>If i have forgotten anyone I do apologies, there are just so many people to thank! Everyone in Graiguenamanagh should be so proud of themselves and the village and we will be forever grateful for what they have done for us.</p>
+              <p>Thank you to all the BnB's, guest houses, self-catering cottages etc for accommodating everyone for the weekend, all our guests were well looked after, especially my cousin Aoife who somehow ended up staying with the very kind Dominic! Thank you to Mark in Daisy Chain for sourcing the beloved milk churns and Bridget for providing the milk churns! Thank you to David in Duiske Abbey who was there to help us Wednesday evening, Friday evening and Saturday morning, we even had him downloading songs and burning cd's 'til all hours Friday night! Thank you to Olivia and her team for helping Fergus out with the food, the service was incredible and the food on Sunday certainly cleared the hangovers!</p>
+              <p>Thank you to Scott and Shauna and the rest of the bar staff (the real heroes this weekend!) who made jager bomb after jager bomb and worked till all hours without complaining! Thank you to the very patient taxi drivers for getting everyone home safe Saturday night. Thank you to Johnny and Eddie for providing the entertainment on Sunday and Damo for leading 'rock the boat' and starting the sing-song and lastly thank you to the chairman of the GAA club for the hurls!</p>
+              <p>If I have forgotten anyone I do apologize, there are just so many people to thank! Everyone in Graiguenamanagh should be so proud of themselves and the village and we will be forever grateful for what they have done for us.</p>
               <p class="testimonials__author">Ciara & David Herity</p>
             </li>
             <li class="testimonials__list-item">

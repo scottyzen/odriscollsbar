@@ -61,7 +61,7 @@ html
     +tablet
         margin-bottom: -22.50%
     +desktop
-        margin-bottom: -25%
+        margin-bottom: -22.50%
     +ultra-wide
-        margin-bottom: -25%
+        margin-bottom: -22.50%
 </style>
