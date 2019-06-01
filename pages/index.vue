@@ -125,7 +125,7 @@
           <li
             v-for="(image, index) in odriscollsInstagram"
             :key="index"
-            class="w-1/2 h-48 md:w-1/3 md:h-64 lg:w-1/4"
+            class="w-1/2 h-48 md:w-1/4 lg:w-1/5 lg:h-56"
           >
             <a
               :href="'https://www.instagram.com/p/' + image.id"
