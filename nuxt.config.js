@@ -21,8 +21,6 @@ function collectWhitelistPatterns() {
 module.exports = {
 	// Server side rendering turned on
 	mode: 'universal',
-	version: '1.0.0',
-
 
 	// Headers of the page
 	head: {
@@ -69,34 +67,13 @@ module.exports = {
 
 	// Modules
 	modules: [
-		'nuxt-ssr-cache',
+		'@bazzite/nuxt-netlify',
 		'nuxt-sass-resources-loader'
 	],
 
-	cache: {
-		// if you're serving multiple host names (with differing
-		// results) from the same server, set this option to true.
-		// (cache keys will be prefixed by your host name)
-		// if your server is behind a reverse-proxy, please use
-		// express or whatever else that uses 'X-Forwarded-Host'
-		// header field to provide req.hostname (actual host name)
-		useHostPrefix: false,
+	netlify: {},
 
-		store: {
-			type: 'memory',
-
-			// maximum number of pages to store in memory
-			// if limit is reached, least recently used page
-			// is removed.
-			max: 100,
-
-			// number of seconds to store this page in cache
-			ttl: 60,
-		},
-		pages: [],
-	},
-
-	// Sass
+	// SASS
 	sassResources: [
 		'@/assets/sass/main.sass'
 	],
@@ -104,7 +81,6 @@ module.exports = {
 	// Build configuration
 	build: {
 		extractCSS: true,
-		cache: true,
 		postcss: [
 			require('tailwindcss')('./tailwind.js'),
 			require('autoprefixer')

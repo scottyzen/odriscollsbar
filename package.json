@@ -20,24 +20,24 @@
 		"node-sass": "^4.9.3",
 		"nuxt": "^2.3.4",
 		"nuxt-sass-resources-loader": "^2.0.2",
-		"nuxt-ssr-cache": "^1.4.3",
 		"vue-gallery": "^1.4.0",
 		"vue2-animate": "^2.1.0",
 		"vue2-datepicker": "^2.4.0",
 		"vue2-google-maps": "^0.10.0"
 	},
 	"devDependencies": {
+		"@bazzite/nuxt-netlify": "^0.1.0",
 		"babel-eslint": "^8.2.1",
 		"cross-env": "^5.2.0",
 		"eslint": "^4.15.0",
 		"eslint-friendly-formatter": "^3.0.0",
 		"eslint-loader": "^1.7.1",
 		"eslint-plugin-vue": "^4.0.0",
+		"extend": ">=3.0.2",
 		"glob-all": "^3.1.0",
+		"lodash": ">=4.17.11",
 		"purgecss-webpack-plugin": "^1.2.1",
 		"sass-loader": "^7.0.3",
-		"tailwindcss": "^0.7.4",
-		"lodash": ">=4.17.11",
-		"extend": ">=3.0.2"
+		"tailwindcss": "^0.7.4"
 	}
 }
