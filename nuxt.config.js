@@ -21,8 +21,8 @@ function collectWhitelistPatterns() {
 module.exports = {
 	// Server side rendering turned on
 	mode: 'universal',
-
 	version: '1.0.0',
+
 
 	// Headers of the page
 	head: {
@@ -69,14 +69,10 @@ module.exports = {
 
 	// Modules
 	modules: [
-		'nuxt-sass-resources-loader',
-		'nuxt-ssr-cache'
-	],
-	sassResources: [
-		'@/assets/sass/main.sass'
+		'nuxt-ssr-cache',
+		'nuxt-sass-resources-loader'
 	],
 
-	// Cache middleware for nuxt's SSR rendering.
 	cache: {
 		// if you're serving multiple host names (with differing
 		// results) from the same server, set this option to true.
@@ -97,19 +93,13 @@ module.exports = {
 			// number of seconds to store this page in cache
 			ttl: 60,
 		},
-		pages: [
-			// these are prefixes of pages that need to be cached
-			// if you want to cache all pages, just include '/'
-			'/page1',
-			'/page2',
-
-			// you can also pass a regular expression to test a path
-			/^\/page3\/\d+$/,
-
-			// to cache only root route, use a regular expression
-			/^\/$/
-		],
+		pages: [],
 	},
+
+	// Sass
+	sassResources: [
+		'@/assets/sass/main.sass'
+	],
 
 	// Build configuration
 	build: {
