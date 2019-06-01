@@ -154,10 +154,12 @@ export default {
     };
   },
   mounted() {
-    axios
-      .get("https://www.instagram.com/explore/tags/" + this.hashtag + "/?__a=1")
-      .then(response => {
-        setTimeout(() => {
+    setTimeout(() => {
+      axios
+        .get(
+          "https://www.instagram.com/explore/tags/" + this.hashtag + "/?__a=1"
+        )
+        .then(response => {
           const images =
             response.data.graphql.hashtag.edge_hashtag_to_media.edges;
 
@@ -172,8 +174,8 @@ export default {
               this.odriscollsInstagram.push(newObj);
             }
           }
-        }, 100);
-      });
+        });
+    }, 2000);
   }
 };
 </script>
