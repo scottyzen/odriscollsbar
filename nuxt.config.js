@@ -71,7 +71,14 @@ module.exports = {
 		'nuxt-sass-resources-loader'
 	],
 
-	netlify: {},
+	netlify: {
+		headers: {
+			'/*': [
+				'Access-Control-Allow-Origin: *',
+				'FileETag: none'
+			]
+		}
+	},
 
 	// SASS
 	sassResources: [
