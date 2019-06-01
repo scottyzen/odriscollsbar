@@ -157,20 +157,22 @@ export default {
     axios
       .get("https://www.instagram.com/explore/tags/" + this.hashtag + "/?__a=1")
       .then(response => {
-        const images =
-          response.data.graphql.hashtag.edge_hashtag_to_media.edges;
+        setTimeout(() => {
+          const images =
+            response.data.graphql.hashtag.edge_hashtag_to_media.edges;
 
-        for (let i = 0; i < images.length; i++) {
-          const img = images[i];
-          if (i < this.numberOfImagesToDisplay) {
-            var newObj = {
-              url: img.node.display_url,
-              id: img.node.shortcode,
-              description: img.node.edge_media_to_caption.edges[0].node.text
-            };
-            this.odriscollsInstagram.push(newObj);
+          for (let i = 0; i < images.length; i++) {
+            const img = images[i];
+            if (i < this.numberOfImagesToDisplay) {
+              var newObj = {
+                url: img.node.display_url,
+                id: img.node.shortcode,
+                description: img.node.edge_media_to_caption.edges[0].node.text
+              };
+              this.odriscollsInstagram.push(newObj);
+            }
           }
-        }
+        }, 100);
       });
   }
 };
