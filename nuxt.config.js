@@ -22,7 +22,7 @@ module.exports = {
 	// Server side rendering turned on
 	mode: 'universal',
 
-	version: pkg.version,
+	version: '1.0.0',
 
 	// Headers of the page
 	head: {
