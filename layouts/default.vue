@@ -16,6 +16,11 @@ html
 	-webkit-font-smoothing: antialiased
 	box-sizing: border-box
     scroll-behavior: smooth
+
+body 
+    font-family: $main-font
+    background: $light url('~assets/images/concrete-bg.jpg')
+    color: #2e414d
  
 *, *:before, *:after, *:focus
 	box-sizing: border-box
