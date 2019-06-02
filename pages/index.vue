@@ -153,8 +153,8 @@ export default {
       numberOfImagesToDisplay: 8
     };
   },
-  mounted() {
-    setTimeout(() => {
+  methods: {
+    getInstagramFeed() {
       axios
         .get(
           "https://www.instagram.com/explore/tags/" + this.hashtag + "/?__a=1"
@@ -162,7 +162,6 @@ export default {
         .then(response => {
           const images =
             response.data.graphql.hashtag.edge_hashtag_to_media.edges;
-
           for (let i = 0; i < images.length; i++) {
             const img = images[i];
             if (i < this.numberOfImagesToDisplay) {
@@ -175,7 +174,19 @@ export default {
             }
           }
         });
-    }, 300);
+    }
+  },
+  created() {
+    if (process.browser) {
+      var excuted = false;
+      window.addEventListener("scroll", () => {
+        var top = window.scrollY;
+        if (top > 1000 && !excuted) {
+          excuted = true;
+          this.getInstagramFeed();
+        }
+      });
+    }
   }
 };
 </script>
