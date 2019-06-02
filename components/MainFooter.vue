@@ -50,6 +50,8 @@
         @click="center=m.position"
       />
     </GmapMap>-->
+    <div class="vue-map-container map"></div>
+
     <div class="bottom-footer text-grey-light text-sm">
       <div class="container py-12 px-4 md:px-0">
         <div class="flex flex-wrap justify-between">
@@ -400,6 +402,8 @@ export default {
     margin-top: -8rem
     z-index: 0
     width: 120%
+    background: #262f3d url('~assets/images/map.jpg') right center
+    background-size: cover
     height: 500px
     margin-left: -20%
     +laptop
