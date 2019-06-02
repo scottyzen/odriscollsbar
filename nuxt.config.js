@@ -68,15 +68,17 @@ module.exports = {
 	// Modules
 	modules: [
 		'@bazzite/nuxt-netlify',
-		'nuxt-sass-resources-loader'
+		'@nuxtjs/style-resources'
 	],
 
 	netlify: {},
 
 	// SASS
-	sassResources: [
-		'@/assets/sass/main.sass'
-	],
+	styleResources: {
+		scss: [
+			'@/assets/sass/main.sass'
+		]
+	},
 
 	// Build configuration
 	build: {

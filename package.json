@@ -18,8 +18,8 @@
 		"cloudinary-core": "^2.6.3",
 		"hamburgers": "^0.9.3",
 		"node-sass": "^4.12.0",
-		"nuxt": "^2.3.4",
-		"nuxt-sass-resources-loader": "^2.0.2",
+		"nuxt": "^2.8.0",
+		"sass-resources-loader": "^2.0.1",
 		"vue-gallery": "^1.4.0",
 		"vue2-animate": "^2.1.0",
 		"vue2-datepicker": "^2.4.0",
@@ -27,6 +27,9 @@
 	},
 	"devDependencies": {
 		"@bazzite/nuxt-netlify": "^0.1.0",
+		"@nuxtjs/style-resources": "^0.1.2",
+		"acorn": "^6.1.1",
+		"acorn-dynamic-import": "^4.0.0",
 		"babel-eslint": "^8.2.1",
 		"cross-env": "^5.2.0",
 		"eslint": "^4.15.0",
@@ -38,6 +41,7 @@
 		"lodash": "^4.17.11",
 		"purgecss-webpack-plugin": "^1.5.0",
 		"sass-loader": "^7.1.0",
-		"tailwindcss": "^0.7.4"
+		"tailwindcss": "^0.7.4",
+		"webpack": "4.28.4"
 	}
 }
