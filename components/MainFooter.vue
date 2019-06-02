@@ -6,7 +6,8 @@
         <div class="flex flex-wrap">
           <div class="w-full flex flex-wrap md:w-1/2">
             <p class="heading w-1/3 md:w-full">Address</p>
-            <p class="w-2/3 md:w-full">O' Driscolls Bar,
+            <p class="w-2/3 md:w-full">
+              O' Driscolls Bar,
               <br>Tinnahinch,
               <br>Graiguenanagh,
               <br>Co. Kilkenny
@@ -33,7 +34,7 @@
       </div>
     </div>
 
-    <GmapMap
+    <!-- <GmapMap
       class="map"
       :center="map.position"
       :zoom="14"
@@ -48,7 +49,7 @@
         :draggable="false"
         @click="center=m.position"
       />
-    </GmapMap>
+    </GmapMap>-->
     <div class="bottom-footer text-grey-light text-sm">
       <div class="container py-12 px-4 md:px-0">
         <div class="flex flex-wrap justify-between">
