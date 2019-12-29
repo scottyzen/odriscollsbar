@@ -37,7 +37,7 @@ collections:
   - name: galleries
     label: Galleries
     format: json
-    folder: assets/content/galleries
+    folder: assets/content/gallery
     create: true
     slug: "{{slug}}"
     editor:
