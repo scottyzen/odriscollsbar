@@ -83,10 +83,12 @@ module.exports = {
 	// Build configuration
 	build: {
 		extractCSS: true,
-		postcss: [
-			require('tailwindcss')('./tailwind.js'),
-			require('autoprefixer')
-		],
+		postcss: {
+			plugins: {
+			  tailwindcss: path.resolve(__dirname, './tailwind.js')
+			}
+		  },
+
 		extend(config, {
 			isDev
 		}) {
