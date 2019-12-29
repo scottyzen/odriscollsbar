@@ -1,9 +1,14 @@
 <template>
-	<div class="container">
-		<article>
-			<h1>{{ blogPost.title }}</h1>
-			<div v-html="$md.render(blogPost.body)" />
-		</article>
+	<div>
+		<img class="w-full featured-image" :src="blogPost.thumbnail" />
+		<div class="container container--style p-8 md:p-12">
+			<article>
+				<h1 class="text-5xl mb-10 leading-none">
+					{{ blogPost.title }}
+				</h1>
+				<div v-html="$md.render(blogPost.body)" />
+			</article>
+		</div>
 	</div>
 </template>
 
@@ -19,4 +24,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.featured-image {
+	object-fit: cover;
+	object-position: center;
+	height: 600px;
+	margin-bottom: -200px;
+}
+</style>
