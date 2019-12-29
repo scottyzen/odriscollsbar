@@ -4,6 +4,7 @@ backend:
 
 media_folder: static/img
 public_folder: /img
+
 collections:
   - name: blog
     label: Blog
@@ -33,22 +34,24 @@ collections:
           config:
             multiple: false
 
-  - name: "gallery"
-    label: "Gallery"
+  - name: galleries
+    label: Galleries
     format: json
-    folder: assets/content/gallery
+    folder: assets/content/galleries
     create: true
     slug: "{{slug}}"
     editor:
       preview: false
     fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: "Publish Date"
+        name: date
+        widget: datetime
       - label: "Gallery"
-        name: "galleryImages"
-        widget: "list"
-        field:
-          {
-            label: Image,
-            name: image,
-            widget: image,
-            media_library: { config: { multiple: false } },
-          }
+        name: "thumbnail"
+        widget: "image"
+        media_library:
+          config:
+            multiple: true
