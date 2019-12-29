@@ -68,8 +68,13 @@ module.exports = {
 	// Modules
 	modules: [
 		'@bazzite/nuxt-netlify',
-		'@nuxtjs/style-resources'
+		'@nuxtjs/style-resources',
+		'@nuxtjs/markdownit'
 	],
+
+	markdownit: {
+		injected: true,
+	  },
 
 	netlify: {},
 

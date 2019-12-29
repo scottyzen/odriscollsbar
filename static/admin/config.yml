@@ -11,11 +11,13 @@ collections:
       format: "json"
       folder: "assets/content/blog"
       create: true
-      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+			# slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+			slug: "{{slug}}"
       editor:
           preview: false
       fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
           - { label: "Description", name: "description", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+					- { label: "Body", name: "body", widget: "markdown" }
+					- {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
