@@ -31,15 +31,17 @@ collections:
         widget: "image"
         media_library:
           config:
-            multiple: true
+            multiple: false
 
   - name: "gallery"
     label: "Gallery"
     folder: assets/content/gallery
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
     fields:
-      - label: "Featured Image"
-        name: "thumbnail"
-        widget: "image"
-        media_library:
-          config:
-            multiple: true
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        field: { label: Image, name: image, widget: image }
