@@ -1,6 +1,4 @@
-backend:
-  name: git-gateway
-  branch: master
+backend: { name: git-gateway, branch: master }
 
 media_folder: static/img
 public_folder: /img
@@ -12,8 +10,7 @@ collections:
     folder: assets/content/blog
     create: true
     slug: "{{slug}}"
-    editor:
-      preview: true
+    editor: { preview: true }
     fields:
       - { label: Title, name: title, widget: string }
       - { label: "Publish Date", name: date, widget: datetime }
@@ -25,11 +22,15 @@ collections:
     label: Galleries
     format: json
     folder: assets/content/gallery
-    create: false
+    create: true
     slug: "{{slug}}"
-    editor:
-      preview: false
+    editor: { preview: false }
     fields:
       - { label: "Gallery", name: "thumbnail", widget: "image" }
       - { label: Title, name: title, widget: string }
-      - { label: "Publish Date", name: date, widget: datetime }
+      - {
+          label: "Publish Date",
+          name: date,
+          widget: datetime,
+          media_library: { config: { multiple: true } },
+        }
