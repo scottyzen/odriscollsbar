@@ -3,15 +3,17 @@ backend: { name: git-gateway, branch: master }
 media_folder: static/img
 public_folder: /img
 
+publish_mode: editorial_workflow
+
 collections:
   - name: blog
-    label: Blog
+    label: Blog # Used in the UI
     format: json
     folder: assets/content/blog
-    create: true
-    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor: { preview: true }
-    fields:
+    fields: # The fields for each document, usually in front matter
       - { label: Title, name: title, widget: string }
       - { label: "Publish Date", name: date, widget: datetime }
       - { label: Description, name: description, widget: string }
@@ -19,29 +21,18 @@ collections:
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
 
   - name: galleries
-    label: Galleries
+    label: Galleries # Used in the UI
     format: json
     folder: assets/content/gallery
-    create: true
-    slug: "{{slug}}"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor: { preview: false }
-    fields:
-      - { label: "Gallery", name: "thumbnail", widget: "image" }
-      - { label: Title, name: title, widget: string }
+    fields: # The fields for each document, usually in front matter
       - {
-          label: "Publish Date",
-          name: date,
-          widget: datetime,
+          label: "Gallery",
+          name: "thumbnail",
+          widget: "image",
           media_library: { config: { multiple: true } },
         }
-
-  - name: "galleria"
-    label: "Gallery"
-    format: json
-    folder: assets/content/gallery
-    widget: "list"
-    optional: true
-    fields:
-      - { label: "Title", name: "imgTitle", widget: "string" }
-      - { label: "Gallery Image", name: "imgSrc", widget: "image" }
-      - { label: "Description", name: "imgDesc", widget: "string" }
+      - { label: Title, name: title, widget: string }
+      - { label: "Publish Date", name: date, widget: datetime }
