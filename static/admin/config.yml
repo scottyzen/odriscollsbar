@@ -32,7 +32,7 @@ collections:
         widget: "image"
         media_library:
           config:
-            multiple: false
+            multiple: true
 
   - name: galleries
     label: Galleries
