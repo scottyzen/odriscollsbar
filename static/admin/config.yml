@@ -37,6 +37,8 @@ collections:
 
   - name: "galleria"
     label: "Gallery"
+    format: json
+    folder: assets/content/gallery
     widget: "list"
     optional: true
     fields:
