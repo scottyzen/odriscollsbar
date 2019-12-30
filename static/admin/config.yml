@@ -5,6 +5,8 @@ public_folder: /img
 
 publish_mode: editorial_workflow
 
+logo_url: https://odriscollsbar.netlify.com/logo.png
+
 collections:
   - name: blog
     label: Blog # Used in the UI
