@@ -21,7 +21,6 @@ function collectWhitelistPatterns() {
 module.exports = {
 	// Server side rendering turned on
 	mode: 'universal',
-  target: 'server',
 
 	// Headers of the page
 	head: {
@@ -75,7 +74,7 @@ module.exports = {
 
 	markdownit: {
 		injected: true,
-	  },
+	},
 
 	netlify: {},
 
