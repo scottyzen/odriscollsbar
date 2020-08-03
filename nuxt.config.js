@@ -21,6 +21,7 @@ function collectWhitelistPatterns() {
 module.exports = {
 	// Server side rendering turned on
 	mode: 'universal',
+	components: true,
 
 	// Headers of the page
 	head: {

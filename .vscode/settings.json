@@ -2,7 +2,6 @@
   "git.ignoreLimitWarning": true,
   "files.exclude": {
     "wip.psd": true,
-    ".nuxt": true,
     ".editorconfig": true,
     ".eslintrc.js": true,
     ".gitignore": true

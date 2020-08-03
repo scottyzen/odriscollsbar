@@ -6,7 +6,7 @@
 				<h1 class="text-5xl mb-10 leading-none">
 					{{ blogPost.title }}
 				</h1>
-				<div v-html="$md.render(blogPost.body)" />
+				<div v-html="$md.render(`${blogPost.body}`)"></div>
 			</article>
 		</div>
 	</div>
