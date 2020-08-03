@@ -22,6 +22,7 @@ module.exports = {
 	// Server side rendering turned on
 	mode: 'universal',
 	components: true,
+	target: 'static',
 
 	// Headers of the page
 	head: {

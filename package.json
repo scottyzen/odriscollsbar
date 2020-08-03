@@ -9,7 +9,6 @@
 		"build": "nuxt build",
 		"start": "nuxt start",
 		"export": "nuxt export",
-		"serve": "nuxt serve",
 		"generate": "nuxt generate"
 	},
 	"dependencies": {
